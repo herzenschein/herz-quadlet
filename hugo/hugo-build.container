@@ -1,0 +1,7 @@
+[Container]
+Image=docker.io/klakegg/hugo:ext-alpine
+ContainerName=hugo
+Volume=/path/to/website:/src:z
+
+[Service]
+Restart=no
