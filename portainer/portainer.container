@@ -1,0 +1,9 @@
+[Container]
+Image=docker.io/portainer/portainer-ce:alpine
+ContainerName=portainer
+
+PublishPort=9443:9443
+Volume=/run/user/1000/podman/podman.sock:/var/run/docker.sock:Z
+
+[Service]
+Restart=on-failure
