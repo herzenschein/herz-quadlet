@@ -1,0 +1,13 @@
+[Container]
+Image=docker.io/writeas/writefreely
+ContainerName=writefreely-web
+PublishPort=8080:8080
+Volume=web-keys:/go/keys:Z
+Volume=/path/to/config.ini:/go/config.ini:Z
+Network=writefreelynet.network
+
+[Service]
+Restart=on-success
+
+[Unit]
+Wants=writefreely-db.service
