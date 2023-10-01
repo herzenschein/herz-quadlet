@@ -49,6 +49,25 @@ Podman user unit search path:
 If you have no idea how to get started or you are using rootless Podman, store
 your container files in ~/.config/containers/systemd/ and run them as a user.
 
+## Quickstart
+
+1. Create the folder `~/.config/containers/systemd/`.
+2. Copy the `owncast.container` file to `~/.config/containers/systemd/`.
+3. Run `systemctl daemon-reload --user`.
+4. Run `systemctl start --user owncast`.
+
+Done, you now have your own selfhosted [Owncast](https://owncast.online/)
+instance! You can visit it under `localhost:8080` and configure it under
+`localhost:8080/admin`.
+
+Additionally, the following commands might be useful to you:
+
+* `systemctl status --user owncast`: check the Owncast service status.
+* `systemctl list-unit-files --user --all --state generated`: list all
+generated services.
+* `journalctl --user-unit owncast`: see the logs for your Owncast container.
+* `podman stats owncast`: monitor the status of your Owncast container.
+
 ## What do you need to use Quadlets?
 
 * [Podman 4.4.0](https://github.com/containers/podman/releases/tag/v4.4.0) or greater
