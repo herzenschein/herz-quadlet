@@ -1,12 +1,15 @@
 [Container]
 Image=docker.io/mariadb
 ContainerName=writefreely-db
+
 PublishPort=3306:3306
-Volume=db-data:/var/lib/mysql/writefreely:Z
+Volume=writefreely-db:/var/lib/mysql/writefreely:Z
+
 Environment=MYSQL_RANDOM_ROOT_PASSWORD=true
 Environment=MYSQL_DATABASE=writefreelydb
 Environment=MYSQL_USER=writefreely
 Environment=MYSQL_PASSWORD=writefreelypass
+
 Network=writefreelynet.network
 
 [Service]
@@ -14,6 +17,3 @@ Restart=on-failure
 
 [Install]
 WantedBy=writefreely-web
-
-[Unit]
-BindsTo=writefreely-web.service

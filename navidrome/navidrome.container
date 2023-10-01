@@ -1,9 +1,10 @@
 [Container]
 Image=docker.io/deluan/navidrome
 ContainerName=navidrome
+
+PublishPort=4533:4533
 Volume=navidrome-data:/data:z
 Volume=/path/to/your/music:/music:ro,z
-PublishPort=4533:4533
 
 [Service]
 Restart=on-failure

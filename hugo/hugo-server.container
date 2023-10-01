@@ -1,8 +1,10 @@
 [Container]
 Image=docker.io/klakegg/hugo:ext-alpine
 ContainerName=hugo-server
-Volume=/path/to/website:/src:z
+
 PublishPort=1313:1313
+Volume=/path/to/website:/src:z
+
 Exec=server --poll 700ms
 
 [Service]
