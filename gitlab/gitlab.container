@@ -1,0 +1,16 @@
+[Container]
+Image=docker.io/gitlab/gitlab-ce
+ContainerName=gitlab
+HostName=example.com
+
+PublishPort=443:443
+PublishPort=80:80
+PublishPort=22:22
+Volume=gitlab-config:/etc/gitlab:Z
+Volume=gitlab-logs:/var/log/gitlab:Z
+Volume=gitlab-data:/var/opt/gitlab:Z
+
+PodmanArgs=--shm-size 256m
+
+[Service]
+Restart=on-failure
