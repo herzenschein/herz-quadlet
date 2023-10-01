@@ -1,0 +1,23 @@
+[Container]
+Image=docker.io/weejewel/wg-easy
+ContainerName=wg-easy
+PublishPort=51820:51820/udp
+PublishPort=51821:51821/tcp
+Volume=wg-easy:/etc/wireguard:Z
+
+Environment=WG_HOST=example.com
+Environment=WG_DEVICE=eth0
+Environment=PASSWORD=wgeasypass
+Environment=WG_PERSISTENT_KEEPALIVE=25
+
+AddCapability=NET_ADMIN
+AddCapability=NET_RAW
+AddCapability=SYS_MODULE
+
+PodmanArgs=--sysctl=net.ipv4.ip_forward=1 --sysctl=net.ipv4.conf.all.src_valid_mark=1
+# If your Podman version supports it, you can use this instead of PodmanArgs:
+# Sysctl=net.ipv4.ip_forward=1
+# Sysctl=net.ipv4.conf.all.src_valid_mark=1
+
+[Service]
+Restart=on-failure
