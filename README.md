@@ -46,6 +46,9 @@ Podman user unit search path:
 * /etc/containers/systemd/users/$(UID) <---- Only for a specific user
 * /etc/containers/systemd/users/       <---- For all users
 
+If you have no idea how to get started or you are using rootless Podman, store
+your container files in ~/.config/containers/systemd/ and run them as a user.
+
 ## What do you need to use Quadlets?
 
 * [Podman 4.4.0](https://github.com/containers/podman/releases/tag/v4.4.0) or greater
