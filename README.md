@@ -29,6 +29,19 @@ create new files based on them. Thankfully, there is a tool called
 container files for you based on `podman run`, `podman compose` or a
 `{docker-}compose.yml`.
 
+## Where are Quadlets stored?
+
+Podman unit search path:
+
+* /etc/containers/systemd/
+* /usr/share/containers/systemd/
+
+Podman user unit search path:
+
+* ~/.config/containers/systemd/        <---- Only for your user
+* /etc/containers/systemd/users/$(UID) <---- Only for a specific user
+* /etc/containers/systemd/users/       <---- For all users
+
 ## What do you need to use Quadlets?
 
 * [Podman 4.4.0](https://github.com/containers/podman/releases/tag/v4.4.0) or greater
