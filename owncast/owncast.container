@@ -1,0 +1,9 @@
+[Container]
+Image=docker.io/owncast/owncast
+ContainerName=owncast
+Volume=data:/app/data:Z
+PublishPort=8080:8080
+PublishPort=1935:1935
+
+[Service]
+Restart=on-failure
