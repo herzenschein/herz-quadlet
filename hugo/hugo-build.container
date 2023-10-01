@@ -1,6 +1,6 @@
 [Container]
 Image=docker.io/klakegg/hugo:ext-alpine
-ContainerName=hugo
+ContainerName=hugo-build
 Volume=/path/to/website:/src:z
 
 [Service]
