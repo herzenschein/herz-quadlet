@@ -67,6 +67,8 @@ Additionally, the following commands might be useful to you:
 generated services.
 * `journalctl --user-unit owncast`: see the logs for your Owncast container.
 * `podman stats owncast`: monitor the status of your Owncast container.
+* `journalctl enable-linger youruser`: let systemd services run while your
+user is not logged in.
 
 ## What do you need to use Quadlets?
 
@@ -116,6 +118,7 @@ under the entry `PodmanArgs=`.
 present within the `[Container]` section of container files, and together with
 certain policies, such as `Restart=` or modifications to the container command
 like `Exec=`, such features will have to be adapted to systemd unit style.
+You might want to use `WantedBy=default.target` to start a service on boot.
 The following is a good read on how unit dependencies behave in systemd:
 [Difference between PartOf and BindsTo in a systemd unit](https://pychao.com/2021/02/24/difference-between-partof-and-bindsto-in-a-systemd-unit/).
 
