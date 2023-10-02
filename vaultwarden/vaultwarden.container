@@ -1,0 +1,12 @@
+[Container]
+Image=docker.io/vaultwarden/server
+ContainerName=vaultwarden
+
+PublishPort=80:80
+Volume=vaultwarden-data:/data:Z
+
+# Environment=SIGNUPS_ALLOWED=false
+# Environment=DOMAIN=example.com
+
+[Service]
+Restart=on-failure
