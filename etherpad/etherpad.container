@@ -1,0 +1,23 @@
+[Container]
+Image=docker.io/etherpad/etherpad
+ContainerName=etherpad
+
+PublishPort=9001:9001
+Volume=etherpad-data:/opt/etherpad-lite/var
+
+Environment=TITLE=Etherpad
+Environment=DEFAULT_PAD_TEXT=
+Environment=PORT=9001
+Environment=ADMIN_PASSWORD=etherpadadmin
+Environment=MINIFY=false
+
+# Environment=DB_TYPE=
+# Environment=DB_HOST=
+# Environment=DB_PORT=
+# Environment=DB_NAME=
+# Environment=DB_USER=
+# Environment=DB_PASS=
+# Environment=DB_FILENAME=
+
+[Service]
+Restart=on-failure
