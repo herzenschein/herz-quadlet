@@ -8,5 +8,5 @@ Volume=gitea-data:/var/lib/gitea:Z
 Volume=gitea-config:/etc/gitea:Z
 
 [Service]
-Restart=on-failure
+Restart=on-success
 

@@ -6,4 +6,4 @@ PublishPort=8080:8080
 Volume=/path/to/nitter.conf:/src/nitter.conf:ro,Z
 
 [Service]
-Restart=on-failure
+Restart=on-success

@@ -7,4 +7,4 @@ Volume=navidrome-data:/data:z
 Volume=/path/to/your/music:/music:ro,z
 
 [Service]
-Restart=on-failure
+Restart=on-success

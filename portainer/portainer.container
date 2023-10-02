@@ -7,4 +7,4 @@ PublishPort=9000:9000
 Volume=/run/user/1000/podman/podman.sock:/var/run/docker.sock:Z
 
 [Service]
-Restart=on-failure
+Restart=on-success

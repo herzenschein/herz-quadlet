@@ -10,4 +10,4 @@ Volume=/path/to/media:/media:z
 #Volume=/path/to/media2:/media2:z
 
 [Service]
-Restart=on-failure
+Restart=on-success

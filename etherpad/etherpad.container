@@ -20,4 +20,4 @@ Environment=MINIFY=false
 # Environment=DB_FILENAME=
 
 [Service]
-Restart=on-failure
+Restart=on-success

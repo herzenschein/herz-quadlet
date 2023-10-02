@@ -13,7 +13,7 @@ Environment=MYSQL_PASSWORD=writefreelypass
 Network=writefreelynet.network
 
 [Service]
-Restart=on-failure
+Restart=on-success
 
 [Install]
 WantedBy=writefreely-web

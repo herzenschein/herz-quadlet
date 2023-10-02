@@ -20,4 +20,4 @@ PodmanArgs=--sysctl=net.ipv4.ip_forward=1 --sysctl=net.ipv4.conf.all.src_valid_m
 # Sysctl=net.ipv4.conf.all.src_valid_mark=1
 
 [Service]
-Restart=on-failure
+Restart=on-success

@@ -8,4 +8,4 @@ Volume=/path/to/website:/src:z
 Exec=server --poll 700ms
 
 [Service]
-Restart=on-failure
+Restart=on-success

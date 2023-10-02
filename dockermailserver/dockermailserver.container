@@ -18,4 +18,4 @@ Environment=ENABLE_CLAMAV=1
 Environment=ENABLE_FAIL2BAN=1
 
 [Service]
-Restart=on-failure
+Restart=on-success

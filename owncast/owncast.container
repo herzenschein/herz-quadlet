@@ -8,4 +8,4 @@ PublishPort=1935:1935
 Volume=owncast-data:/app/data:Z
 
 [Service]
-Restart=on-failure
+Restart=on-success

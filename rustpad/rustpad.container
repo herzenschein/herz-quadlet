@@ -5,4 +5,4 @@ ContainerName=rustpad
 PublishPort=3030:3030
 
 [Service]
-Restart=on-failure
+Restart=on-success

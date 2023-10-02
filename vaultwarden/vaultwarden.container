@@ -9,4 +9,4 @@ Volume=vaultwarden-data:/data:Z
 # Environment=DOMAIN=example.com
 
 [Service]
-Restart=on-failure
+Restart=on-success
