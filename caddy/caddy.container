@@ -1,0 +1,15 @@
+[Container]
+Image=docker.io/caddy
+ContainerName=caddy
+
+PublishPort=443:443
+PublishPort=80:80
+Volume=/path/to/Caddyfile:/etc/caddy/Caddyfile:ro,Z
+Volume=/path/to/site:/srv:z
+Volume=caddy-data:/data:Z
+Volume=caddy-config:/config:Z
+
+Network=caddynet.network
+
+[Service]
+Restart=no
