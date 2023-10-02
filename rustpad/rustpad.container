@@ -1,0 +1,8 @@
+[Container]
+Image=docker.io/ekzhang/rustpad
+ContainerName=rustpad
+
+PublishPort=3030:3030
+
+[Service]
+Restart=on-failure
