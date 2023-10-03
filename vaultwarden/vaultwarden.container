@@ -2,7 +2,7 @@
 Image=docker.io/vaultwarden/server
 ContainerName=vaultwarden
 
-PublishPort=80:80
+PublishPort=8080:80
 Volume=vaultwarden-data:/data:Z
 
 # Environment=SIGNUPS_ALLOWED=false
