@@ -1,0 +1,14 @@
+[Container]
+Image=ghcr.io/alexta69/metube
+ContainerName=metube
+
+PublishPort=8081:8081
+Volume=/path/to/downloads:/downloads:Z
+
+# Environment=DEFAULT_THEME=auto # light, dark, auto
+# Environment='OUTPUT_TEMPLATE=%(title)s.%(ext)s'
+# Environment='YTDL_OPTIONS=optionsforytdlinJSONformat'
+# Environment=YTDL_OPTIONS_FILE=ytdl_options.json
+
+[Service]
+Restart=on-success
