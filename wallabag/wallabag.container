@@ -1,0 +1,15 @@
+[Container]
+Image=docker.io/wallabag/wallabag
+ContainerName=wallabag
+
+PublishPort=8080:80
+Volume=wallabag-data:/var/www/wallabag/data
+Volume=wallabag-images:/var/www/wallabag/web/assets/images
+
+Environment=SYMFONY__ENV__DOMAIN_NAME=http://localhost:8080
+Environment=SYMFONY__ENV__SERVER_NAME="Your wallabag instance"
+#Environment=SYMFONY__ENV__FOSUSER_REGISTRATION=false
+#Environment=SYMFONY__ENV__SECRET=secrettoaddmoreentropytosecurityoperations
+
+[Service]
+Restart=on-success
