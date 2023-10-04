@@ -75,6 +75,7 @@ user is not logged in.
 * [Podman 4.4.0](https://github.com/containers/podman/releases/tag/v4.4.0) or greater
 * [Crun](https://github.com/containers/crun)
 * [Have CGroupsV2 enabled](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_monitoring_and_updating_the_kernel/using-cgroups-v2-to-control-distribution-of-cpu-time-for-applications_managing-monitoring-and-updating-the-kernel#mounting-cgroups-v2_using-cgroups-v2-to-control-distribution-of-cpu-time-for-applications)
+* systemd-container
 
 ## Learn more about Quadlets
 
