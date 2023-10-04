@@ -9,6 +9,8 @@ Environment=SYNAPSE_SERVER_NAME=synapse.example.com
 Environment=SYNAPSE_REPORT_STATS=no
 # Environment=SYNAPSE_HTTP_PORT=8008
 
+UserNS=keep-id
+
 Exec=generate
 
 [Service]
