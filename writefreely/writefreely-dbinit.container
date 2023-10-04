@@ -2,9 +2,12 @@
 Image=docker.io/writeas/writefreely
 ContainerName=writefreely-dbinit
 
+Volume=writefreely-keys:/go/keys:z
 Volume=/path/to/config.ini:/go/config.ini:z
 Network=writefreelynet.network
 
+User=daemon
+Group=daemon
 UserNS=keep-id
 
 Exec=db init

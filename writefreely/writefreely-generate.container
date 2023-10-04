@@ -2,12 +2,14 @@
 Image=docker.io/writeas/writefreely
 ContainerName=writefreely-generate
 
-Volume=/path/to/config.ini:/go/config.ini:z
+Volume=/path/to/config.ini:/go/config.ini:Z
 Network=writefreelynet.network
 
+User=daemon
+Group=daemon
 UserNS=keep-id
 
-Exec=generate
+Exec=config generate
 
 [Service]
 Restart=no

@@ -3,7 +3,7 @@ Image=docker.io/mariadb
 ContainerName=writefreely-db
 
 PublishPort=3306:3306
-Volume=writefreely-db:/var/lib/mysql/writefreely:Z
+Volume=writefreely-db:/var/lib/mysql/writefreely:z
 Network=writefreelynet.network
 
 Environment=MYSQL_RANDOM_ROOT_PASSWORD=true
