@@ -1,0 +1,13 @@
+[Container]
+Image=docker.io/writeas/writefreely
+ContainerName=writefreely-dbinit
+
+Volume=/path/to/config.ini:/go/config.ini:z
+Network=writefreelynet.network
+
+UserNS=keep-id
+
+Exec=db init
+
+[Service]
+Restart=no

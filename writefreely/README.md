@@ -6,15 +6,14 @@ https://github.com/herzenschein/herz-podman/tree/main/writefreely
 
 Quickstart:
 
-Generate the config file:
+Create a `config.ini` file somewhere on your machine, then edit
+writefreely-generate, writefreely-web and writefreely-dbinit to point to
+where the config.ini is. Then, generate the config file:
 
 ```
-touch writefreely-config.ini
-chmod 606 writefreely-config.ini
-podman run --name writefreely --rm --interactive --tty --mount type=bind,source=./writefreely-config.ini,destination=/go/config.ini,rw,relabel=private docker.io/writeas/writefreely:latest config generate
+systemctl daemon-reload --user
+systemctl start --user writefreely-generate
 ```
-
-Edit the container file to point to where the config.ini is.
 
 Change the following entries in the writefreely-config.ini file:
 
@@ -28,22 +27,16 @@ single_user = false
 open_registration = true
 ```
 
-Reload the systemd daemon:
-
-```
-systemctl daemon-reload --user
-```
-
 Start the WriteFreely container:
 
 ```
 systemctl start --user writefreely-web
 ```
 
-It will fail, while writefreely-db will keep running. Run the following:
+It will fail, while writefreely-db will keep running. Initialize the database:
 
 ```
-podman run --network systemd-writefreelynet --name writefreely --rm --interactive --tty --mount type=bind,source=./writefreely-config.ini,destination=/go/config.ini,rw docker.io/writeas/writefreely:latest db init
+systemctl start --user writefreely-dbinit
 ```
 
 The database is ready and WriteFreely should work now. Restart it:

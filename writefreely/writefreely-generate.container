@@ -1,0 +1,13 @@
+[Container]
+Image=docker.io/writeas/writefreely
+ContainerName=writefreely-generate
+
+Volume=/path/to/config.ini:/go/config.ini:z
+Network=writefreelynet.network
+
+UserNS=keep-id
+
+Exec=generate
+
+[Service]
+Restart=no
