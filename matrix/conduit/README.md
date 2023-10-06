@@ -2,7 +2,7 @@
 
 Just change the `CONDUIT_SERVER_NAME`, then start the server.
 
-Refer to the [Synapse Reverse Proxying](../synapse/README.md#reverse_proxying)
+Refer to the [Synapse Reverse Proxying](../synapse/README.md#reverse-proxying)
 instructions to manage your Conduit Server and your Homeserver with a reverse
 proxy. It has the same behavior.
 
