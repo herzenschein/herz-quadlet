@@ -1,0 +1,17 @@
+[Container]
+Image=docker.io/matrixconduit/matrix-conduit
+ContainerName=conduit
+
+PublishPort=8448:6167
+Volume=conduit-database:/var/lib/matrix-conduit
+
+Environment=CONDUIT_SERVER_NAME="matrix.example.com"
+Environment=CONDUIT_DATABASE_BACKEND="rocksdb"
+Environment=CONDUIT_ALLOW_REGISTRATION=false
+Environment=CONDUIT_ALLOW_FEDERATION=true
+Environment=CONDUIT_MAX_REQUEST_SIZE="20_000_000"
+Environment=CONDUIT_TRUSTED_SERVERS="[\"matrix.org\"]"
+Environment=CONDUIT_MAX_CONCURRENT_REQUESTS="100"
+Environment=CONDUIT_LOG="warn,rocket=off,_=off,sled=off"
+
+UserNS=keep-id
