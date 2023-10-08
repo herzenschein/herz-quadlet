@@ -12,4 +12,4 @@ Volume=caddy-config:/config:Z
 Network=caddynet.network
 
 [Service]
-Restart=no
+Restart=on-success
