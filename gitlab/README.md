@@ -2,7 +2,7 @@
 
 Start the container.
 
-Once you are able to see the webpage on `http://127.0.0.1:8080` and before 24 hours pass, run:
+Once you are able to see the webpage on `http://127.0.0.1:8888` and before 24 hours pass, run:
 
 ```bash
 podman exec --interactive --tty gitlab grep 'Password:' /etc/gitlab/initial_root_password
