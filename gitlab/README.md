@@ -5,7 +5,7 @@ Start the container.
 Once you are able to see the webpage on `http://127.0.0.1:8080` and before 24 hours pass, run:
 
 ```bash
-podman exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
+podman exec --interactive --tty gitlab grep 'Password:' /etc/gitlab/initial_root_password
 ```
 
 You should then be able to log in as the user `root` using the above password.
