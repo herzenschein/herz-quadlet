@@ -2,7 +2,7 @@
 
 Start the container.
 
-Once you are able to see the webpage on 127.0.0.1:8080 and before 24 hours pass, run:
+Once you are able to see the webpage on `http://127.0.0.1:8080` and before 24 hours pass, run:
 
 ```bash
 podman exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
@@ -14,7 +14,9 @@ Once logged in, you may visit the administrative area by going to
 
 The provided container file runs on `127.0.0.1`, the localhost IP, by default.
 For local testing this works well, as well as the host's IP as shown by
-`ip --brief address`, but you cannot use `localhost`.
+`ip --brief address`, but you cannot use `localhost`. If you are running
+this Quadlet under a publicly exposed server, you should use the domain
+or subdomain name for both `HostName=` and `external_url`.
 
 When using a different published port, unlike other container services,
 you may **NOT** do something like `8888:80`. You must use `8888:8888` and
