@@ -1,0 +1,14 @@
+[Container]
+Image=docker.io/gitlab/gitlab-runner:alpine
+ContainerName=gitlab-runner
+
+Volume=/run/user/1000/podman/podman.sock:/var/run/docker.sock:z
+Volume=gitlab-runner-config:/etc/gitlab-runner:Z
+
+Network=gitlabnet.network
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=gitlab.service

@@ -1,14 +1,18 @@
 [Container]
 Image=docker.io/gitlab/gitlab-ce
 ContainerName=gitlab
-HostName=example.com
+HostName=127.0.0.1
 
-PublishPort=4443:443
-PublishPort=8080:80
+PublishPort=4443:4443
+PublishPort=8888:8888
 PublishPort=2222:22
 Volume=gitlab-config:/etc/gitlab:Z
 Volume=gitlab-logs:/var/log/gitlab:Z
 Volume=gitlab-data:/var/opt/gitlab:Z
+
+Environment=GITLAB_OMNIBUS_CONFIG="external_url 'http://127.0.0.1:8888'"
+
+Network=gitlabnet.network
 
 User=root
 Group=root
