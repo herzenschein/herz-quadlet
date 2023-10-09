@@ -1,0 +1,15 @@
+[Container]
+Image=docker.io/mariadb
+ContainerName=mediawiki-db
+
+Volume=mediawiki-db:/var/lib/mysql:Z
+
+Environment=MYSQL_DATABASE=mediawiki
+Environment=MYSQL_RANDOM_ROOT_PASSWORD=yes
+Environment=MYSQL_USER=mediawiki-user
+Environment=MYSQL_PASSWORD=mediawiki-pass
+
+Network=mediawikinet.network
+
+[Service]
+Restart=on-success
