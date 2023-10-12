@@ -71,11 +71,3 @@ podman exec --interactive --tty gitlab-runner gitlab-runner register --url http:
 
 Note that the first `gitlab-runner` is the container name, and the second is
 the container entrypoint.
-
-Alternatively, you can simply point to the Gitlab container name:
-
-```bash
-podman exec --interactive --tty gitlab-runner gitlab-runner register --url http://gitlab:8888 --token sometoken
-```
-
-Which should get resolved through Podman container DNS networking.
