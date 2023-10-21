@@ -1,6 +1,6 @@
 ## Running instructions
 
-Edit [firefish.env](./firefish.env) and [default.yml](./firefish-config/default.yml)
+Edit [firefish.env](firefish-config/firefish.env) and [default.yml](firefish/firefish-config/default.yml)
 so that the PostgreSQL information is safe and matching.
 
 Make sure that the `host:` field of PostgreSQL and Redis in the default.yml file
