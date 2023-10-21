@@ -1,0 +1,14 @@
+[Unit]
+Requires=firefish-db.service firefish-redis.service
+
+[Container]
+Image=registry.joinfirefish.org/firefish/firefish
+ContainerName=firefish-web
+Environment=NODE_ENV=production
+Network=firefishnet.network
+PublishPort=3000:3000
+Volume=firefish-files:/firefish/files:Z
+Volume=/path/to/default.yml:/firefish/.config/default.yml:ro,Z
+
+[Service]
+Restart=on-success

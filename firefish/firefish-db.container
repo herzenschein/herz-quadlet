@@ -1,0 +1,9 @@
+[Container]
+Image=docker.io/postgres:alpine
+ContainerName=firefish-db
+EnvironmentFile=/path/to/firefish.env
+Network=firefishnet.network
+Volume=firefish-data:/var/lib/postgresql/data:Z
+
+[Service]
+Restart=on-success
