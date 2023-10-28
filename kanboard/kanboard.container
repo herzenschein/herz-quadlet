@@ -1,0 +1,14 @@
+[Container]
+Image=docker.io/kanboard/kanboard
+ContainerName=kanboard
+
+PublishPort=8080:80
+
+Volume=kanboard-data:/var/www/app/data
+Volume=kanboard-plugins:/var/www/app/plugins
+Volume=kanboard-ssl:/etc/nginx/ssl
+
+Environment=PLUGIN_INSTALLER=false
+
+[Service]
+Restart=on-success
