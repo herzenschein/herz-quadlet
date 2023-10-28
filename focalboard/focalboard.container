@@ -1,0 +1,8 @@
+[Container]
+Image=docker.io/mattermost/focalboard
+ContainerName=focalboard
+
+PublishPort=8000:8000
+
+[Service]
+Restart=on-success
