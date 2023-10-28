@@ -1,0 +1,8 @@
+[Container]
+Image=docker.io/mongo
+ContainerName=wekan-db
+
+Network=wekannet.network
+
+[Service]
+Restart=on-success

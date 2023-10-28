@@ -1,0 +1,14 @@
+[Container]
+Image=quay.io/wekan/wekan
+ContainerName=wekan
+
+PublishPort=8080:8080
+
+Environment=ROOT_URL=http://127.0.0.1:2000
+Environment=MONGO_URL=mongodb://wekan-db:27017/wekan
+Environment=WITH_API=true
+
+Network=wekannet.network
+
+[Service]
+Restart=on-success
