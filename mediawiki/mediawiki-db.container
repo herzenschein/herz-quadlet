@@ -2,6 +2,7 @@
 Image=docker.io/mariadb
 ContainerName=mediawiki-db
 
+PublishPort=3306:3306
 Volume=mediawiki-db:/var/lib/mysql:Z
 
 Environment=MYSQL_DATABASE=mediawiki
