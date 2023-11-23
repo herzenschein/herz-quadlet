@@ -1,0 +1,17 @@
+[Container]
+Image=docker.io/nginx:1-alpine
+ContainerName=lemmy-proxy
+
+PublishPort=1236:1236
+PublishPort=8536:8536
+
+Volume=/path/to/nginx.conf:/etc/nginx/nginx.conf:ro,Z
+
+Network=lemmynet.network
+
+[Service]
+Restart=on-success
+
+[Install]
+After=lemmy-pictrs.service
+After=lemmy-ui.service
