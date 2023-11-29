@@ -2,6 +2,7 @@
 Image=docker.io/asonix/pictrs:0.4.0-beta.19
 ContainerName=lemmy-pictrs
 AutoUpdate=registry
+Notify=true
 
 Environment=PICTRS_OPENTELEMETRY_URL=http://otel:4137
 Environment=PICTRS__API_KEY=API_KEY

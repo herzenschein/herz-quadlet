@@ -2,6 +2,7 @@
 Image=docker.io/redis:alpine
 ContainerName=firefish-redis
 AutoUpdate=registry
+Notify=true
 
 Network=firefishnet.network
 Volume=firefish-cache:/data:Z

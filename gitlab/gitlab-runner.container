@@ -2,6 +2,7 @@
 Image=docker.io/gitlab/gitlab-runner:alpine
 ContainerName=gitlab-runner
 AutoUpdate=registry
+Notify=true
 
 Volume=/run/user/1000/podman/podman.sock:/var/run/docker.sock:z
 Volume=gitlab-runner-config:/etc/gitlab-runner:Z

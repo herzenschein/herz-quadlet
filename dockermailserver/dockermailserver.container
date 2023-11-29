@@ -2,6 +2,8 @@
 Image=ghcr.io/docker-mailserver/docker-mailserver
 ContainerName=dockermailserver
 AutoUpdate=registry
+Notify=true
+
 HostName=mail.example.com
 
 PublishPort=2525:25

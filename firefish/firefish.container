@@ -2,6 +2,7 @@
 Image=registry.joinfirefish.org/firefish/firefish
 ContainerName=firefish-web
 AutoUpdate=registry
+Notify=true
 
 Environment=NODE_ENV=production
 Network=firefishnet.network

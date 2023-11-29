@@ -2,6 +2,7 @@
 Image=docker.io/postgres:alpine
 ContainerName=firefish-db
 AutoUpdate=registry
+Notify=true
 
 EnvironmentFile=/path/to/firefish.env
 Network=firefishnet.network

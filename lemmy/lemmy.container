@@ -11,6 +11,7 @@
 Image=docker.io/dessalines/lemmy:0.19.0-rc.6
 ContainerName=lemmy
 AutoUpdate=registry
+Notify=true
 
 PublishPort=10002:10002
 

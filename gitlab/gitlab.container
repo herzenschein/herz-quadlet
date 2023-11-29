@@ -2,6 +2,7 @@
 Image=docker.io/gitlab/gitlab-ce
 ContainerName=gitlab
 AutoUpdate=registry
+Notify=true
 
 HostName=127.0.0.1
 

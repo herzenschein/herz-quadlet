@@ -2,6 +2,7 @@
 Image=docker.io/mattermost/focalboard
 ContainerName=focalboard
 AutoUpdate=registry
+Notify=true
 
 PublishPort=8000:8000
 

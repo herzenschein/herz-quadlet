@@ -2,6 +2,7 @@
 Image=docker.io/klakegg/hugo:ext-alpine
 ContainerName=hugo-build
 AutoUpdate=registry
+Notify=true
 
 Volume=/path/to/website:/src:z
 

@@ -2,6 +2,7 @@
 Image=docker.io/zedeus/nitter
 ContainerName=nitter
 AutoUpdate=registry
+Notify=true
 
 PublishPort=8080:8080
 Volume=/path/to/nitter.conf:/src/nitter.conf:ro,Z

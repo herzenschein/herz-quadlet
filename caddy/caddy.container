@@ -2,6 +2,7 @@
 Image=docker.io/caddy
 ContainerName=caddy
 AutoUpdate=registry
+Notify=true
 
 PublishPort=443:443
 PublishPort=80:80

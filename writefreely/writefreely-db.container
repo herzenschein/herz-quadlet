@@ -2,6 +2,7 @@
 Image=docker.io/mariadb
 ContainerName=writefreely-db
 AutoUpdate=registry
+Notify=true
 
 PublishPort=3306:3306
 Volume=writefreely-db:/var/lib/mysql/writefreely:z

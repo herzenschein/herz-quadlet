@@ -2,6 +2,7 @@
 Image=docker.io/kanboard/kanboard
 ContainerName=kanboard
 AutoUpdate=registry
+Notify=true
 
 PublishPort=8080:80
 

@@ -2,6 +2,7 @@
 Image=quay.io/wekan/wekan
 ContainerName=wekan
 AutoUpdate=registry
+Notify=true
 
 PublishPort=8080:8080
 
