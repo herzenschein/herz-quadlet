@@ -1,6 +1,7 @@
 [Container]
 Image=docker.io/gitea/gitea
 ContainerName=gitea
+AutoUpdate=registry
 
 PublishPort=3000:3000
 PublishPort=2222:2222

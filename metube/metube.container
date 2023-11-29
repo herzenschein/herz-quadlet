@@ -1,6 +1,7 @@
 [Container]
 Image=ghcr.io/alexta69/metube
 ContainerName=metube
+AutoUpdate=registry
 
 PublishPort=8081:8081
 Volume=/path/to/downloads:/downloads:Z

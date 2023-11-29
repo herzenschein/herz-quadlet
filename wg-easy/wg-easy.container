@@ -1,6 +1,8 @@
 [Container]
 Image=docker.io/weejewel/wg-easy
 ContainerName=wg-easy
+AutoUpdate=registry
+
 PublishPort=51820:51820/udp
 PublishPort=51821:51821/tcp
 Volume=wg-easy:/etc/wireguard:Z

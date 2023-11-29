@@ -1,6 +1,7 @@
 [Container]
 Image=docker.io/portainer/portainer-ce:alpine
 ContainerName=portainer
+AutoUpdate=registry
 
 PublishPort=9443:9443
 PublishPort=9000:9000

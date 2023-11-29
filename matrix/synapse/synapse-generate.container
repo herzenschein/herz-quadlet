@@ -1,6 +1,7 @@
 [Container]
 Image=docker.io/matrixdotorg/synapse
 ContainerName=synapse-generate
+AutoUpdate=registry
 
 PublishPort=8008:8008
 Volume=synapse-data:/data:z

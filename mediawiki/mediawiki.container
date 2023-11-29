@@ -1,6 +1,7 @@
 [Container]
 Image=docker.io/mediawiki
 ContainerName=mediawiki
+AutoUpdate=registry
 
 PublishPort=8080:80
 Volume=mediawiki-images:/var/www/html/images:Z

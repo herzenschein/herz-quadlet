@@ -1,6 +1,8 @@
 [Container]
 Image=docker.io/gitlab/gitlab-ce
 ContainerName=gitlab
+AutoUpdate=registry
+
 HostName=127.0.0.1
 
 PublishPort=4443:4443

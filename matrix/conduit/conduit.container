@@ -1,6 +1,7 @@
 [Container]
 Image=docker.io/matrixconduit/matrix-conduit
 ContainerName=conduit
+AutoUpdate=registry
 
 PublishPort=8448:6167
 Volume=conduit-database:/var/lib/matrix-conduit

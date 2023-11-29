@@ -1,6 +1,7 @@
 [Container]
 Image=docker.io/kanboard/kanboard
 ContainerName=kanboard
+AutoUpdate=registry
 
 PublishPort=8080:80
 

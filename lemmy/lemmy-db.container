@@ -1,6 +1,7 @@
 [Container]
 Image=docker.io/postgres:15-alpine
 ContainerName=lemmy-db
+AutoUpdate=registry
 
 PublishPort=5432:5432
 

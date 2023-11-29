@@ -1,6 +1,7 @@
 [Container]
 Image=docker.io/mongo
 ContainerName=wekan-db
+AutoUpdate=registry
 
 Network=wekannet.network
 
