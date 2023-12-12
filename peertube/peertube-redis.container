@@ -1,0 +1,16 @@
+[Container]
+Image=docker.io/redis:alpine
+ContainerName=peertube-redis
+AutoUpdate=registry
+
+PublishPort=6379:6379
+
+Volume=peertube-redis:/data:z
+
+Network=peertubenet.network
+
+[Service]
+Restart=on-success
+
+[Unit]
+PartOf=peertube.service

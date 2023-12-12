@@ -1,0 +1,16 @@
+[Container]
+Image=docker.io/postgres:alpine
+ContainerName=peertube-db
+AutoUpdate=registry
+
+Volume=peertube-db:/var/lib/postgresql/data:z
+
+EnvironmentFile=env
+
+Network=peertubenet.network
+
+[Service]
+Restart=on-success
+
+[Unit]
+PartOf=peertube.service

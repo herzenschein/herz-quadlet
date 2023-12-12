@@ -1,0 +1,21 @@
+[Container]
+Image=docker.io/chocobozzz/peertube:production-bookworm
+ContainerName=peertube
+AutoUpdate=registry
+HostName=localhost
+
+PublishPort=9000:9000
+#PublishPort=1935:1935 # If you need live functionality
+Volume=peertube-data:/data:z
+Volume=peertube-config:/config:z
+
+EnvironmentFile=env
+
+Network=peertubenet.network
+
+[Unit]
+Requires=peertube-db.service peertube-redis.service
+
+[Service]
+Restart=on-success
+TimeoutStartSec=900
