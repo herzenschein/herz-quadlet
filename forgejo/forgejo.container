@@ -1,0 +1,13 @@
+[Container]
+Image=codeberg.org/forgejo/forgejo:1.21-rootless
+ContainerName=forgejo
+AutoUpdate=registry
+
+PublishPort=4000:3000
+Volume=forgejo-config:/etc/gitea:Z
+Volume=forgejo-data:/var/lib/gitea:Z
+Volume=forgejo-log:/var/lib/gitea/data/log:Z
+ShmSize=256m
+
+[Unit]
+After=network-online.target
