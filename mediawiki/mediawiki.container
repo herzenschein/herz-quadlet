@@ -2,7 +2,7 @@
 Image=docker.io/mediawiki
 ContainerName=mediawiki
 AutoUpdate=registry
-Notify=true
+#Notify=true
 
 PublishPort=8080:80
 Volume=mediawiki-images:/var/www/html/images:Z

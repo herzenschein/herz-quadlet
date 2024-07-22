@@ -2,7 +2,7 @@
 Image=docker.io/deluan/navidrome
 ContainerName=navidrome
 AutoUpdate=registry
-Notify=true
+#Notify=true
 
 PublishPort=4533:4533
 Volume=navidrome-data:/data:z

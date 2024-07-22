@@ -2,7 +2,7 @@
 Image=docker.io/writeas/writefreely
 ContainerName=writefreely-dbinit
 AutoUpdate=registry
-Notify=true
+#Notify=true
 
 Volume=writefreely-keys:/go/keys:z
 Volume=/path/to/config.ini:/go/config.ini:z

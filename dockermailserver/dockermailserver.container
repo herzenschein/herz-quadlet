@@ -2,7 +2,7 @@
 Image=ghcr.io/docker-mailserver/docker-mailserver
 ContainerName=dockermailserver
 AutoUpdate=registry
-Notify=true
+#Notify=true
 
 HostName=mail.example.com
 

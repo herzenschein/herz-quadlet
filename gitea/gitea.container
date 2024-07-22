@@ -2,7 +2,7 @@
 Image=docker.io/gitea/gitea
 ContainerName=gitea
 AutoUpdate=registry
-Notify=true
+#Notify=true
 
 PublishPort=3000:3000
 PublishPort=2222:2222

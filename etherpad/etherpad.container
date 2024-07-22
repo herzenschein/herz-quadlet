@@ -2,7 +2,7 @@
 Image=docker.io/etherpad/etherpad
 ContainerName=etherpad
 AutoUpdate=registry
-Notify=true
+#Notify=true
 
 PublishPort=9001:9001
 Volume=etherpad-data:/opt/etherpad-lite/var

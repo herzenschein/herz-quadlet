@@ -2,7 +2,7 @@
 Image=docker.io/superseriousbusiness/gotosocial
 ContainerName=gotosocial
 AutoUpdate=registry
-Notify=true
+#Notify=true
 
 Volume=gotosocial-data:/gotosocial/storage
 

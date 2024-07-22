@@ -2,7 +2,7 @@
 Image=docker.io/writeas/writefreely
 ContainerName=writefreely-web
 AutoUpdate=registry
-Notify=true
+#Notify=true
 
 PublishPort=8080:8080
 Volume=writefreely-keys:/go/keys:Z

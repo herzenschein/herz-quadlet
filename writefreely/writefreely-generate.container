@@ -2,7 +2,7 @@
 Image=docker.io/writeas/writefreely
 ContainerName=writefreely-generate
 AutoUpdate=registry
-Notify=true
+#Notify=true
 
 Volume=/path/to/config.ini:/go/config.ini:Z
 Network=writefreelynet.network

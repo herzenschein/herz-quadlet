@@ -2,7 +2,7 @@
 Image=docker.io/vaultwarden/server
 ContainerName=vaultwarden
 AutoUpdate=registry
-Notify=true
+#Notify=true
 
 PublishPort=8080:80
 Volume=vaultwarden-data:/data:Z
