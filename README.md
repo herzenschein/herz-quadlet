@@ -1,6 +1,8 @@
 # herz-quadlet
 A repository where I store my podman quadlets.
 
+All quadlets in this repo are rootless.
+
 ## What are Quadlets?
 
 Quadlets are a new way to manage containers. They consist of `.container` files.
@@ -50,6 +52,10 @@ If you have no idea how to get started or you are using rootless Podman, store
 your container files in ~/.config/containers/systemd/ and run them as a user.
 
 ## Quickstart
+
+This quickstart assumes you will be using rootless containers. If you want to
+use rootful podman quadlets, change the images and configurations accordingly,
+as those might vary according to each upstream project.
 
 1. Create the folder `~/.config/containers/systemd/`.
 2. Copy the `owncast.container` file to `~/.config/containers/systemd/`.
