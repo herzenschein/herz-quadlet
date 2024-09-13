@@ -3,6 +3,10 @@ A repository where I store my podman quadlets.
 
 All quadlets in this repo are rootless.
 
+The main repository now resides in [Codeberg](https://codeberg.org/herzenschein/herz-quadlet),
+the [Github](https://github.com/herzenschein/herz-quadlet) repository is now a mirror.
+Issues can be reported in either.
+
 ## What are Quadlets?
 
 Quadlets are a new way to manage containers. They consist of `.container` files.
