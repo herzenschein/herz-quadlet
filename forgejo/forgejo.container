@@ -2,6 +2,8 @@
 Image=codeberg.org/forgejo/forgejo:1.21-rootless
 ContainerName=forgejo
 AutoUpdate=registry
+#Notify=true
+LogDriver=journald
 
 PublishPort=3000:3000
 Volume=forgejo-config:/etc/gitea:Z

@@ -3,6 +3,7 @@ Image=docker.io/mongo
 ContainerName=wekan-db
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 Network=wekannet.network
 

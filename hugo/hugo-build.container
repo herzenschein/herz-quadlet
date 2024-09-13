@@ -3,6 +3,7 @@ Image=docker.io/klakegg/hugo:ext-alpine
 ContainerName=hugo-build
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 Volume=/path/to/website:/src:z
 

@@ -3,6 +3,7 @@ Image=registry.joinfirefish.org/firefish/firefish
 ContainerName=firefish-web
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 Environment=NODE_ENV=production
 Network=firefishnet.network

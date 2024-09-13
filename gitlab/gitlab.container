@@ -3,6 +3,7 @@ Image=docker.io/gitlab/gitlab-ce
 ContainerName=gitlab
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 HostName=127.0.0.1
 

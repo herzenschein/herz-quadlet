@@ -3,6 +3,7 @@ Image=docker.io/superseriousbusiness/gotosocial
 ContainerName=gotosocial
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 Volume=gotosocial-data:/gotosocial/storage
 

@@ -3,6 +3,7 @@ Image=docker.io/matrixdotorg/synapse
 ContainerName=synapse-generate
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 PublishPort=8008:8008
 Volume=synapse-data:/data:z

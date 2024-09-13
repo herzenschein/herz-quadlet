@@ -3,6 +3,7 @@ Image=docker.io/owncast/owncast
 ContainerName=owncast
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 PublishPort=8080:8080
 PublishPort=1935:1935

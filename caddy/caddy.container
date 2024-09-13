@@ -3,6 +3,7 @@ Image=docker.io/caddy
 ContainerName=caddy
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 PublishPort=443:443
 PublishPort=80:80

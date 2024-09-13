@@ -3,6 +3,7 @@ Image=docker.io/jellyfin/jellyfin
 ContainerName=jellyfin
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 PublishPort=8096:8096
 Volume=jellyfin-config:/config:Z

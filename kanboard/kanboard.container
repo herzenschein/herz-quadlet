@@ -3,6 +3,7 @@ Image=docker.io/kanboard/kanboard
 ContainerName=kanboard
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 PublishPort=8080:80
 

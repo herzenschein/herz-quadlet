@@ -2,6 +2,8 @@
 Image=docker.io/postgres:alpine
 ContainerName=peertube-db
 AutoUpdate=registry
+#Notify=true
+LogDriver=journald
 
 Volume=peertube-db:/var/lib/postgresql/data:z
 

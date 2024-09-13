@@ -3,6 +3,7 @@ Image=docker.io/nginx:1-alpine
 ContainerName=lemmy-proxy
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 PublishPort=1236:1236
 PublishPort=8536:8536

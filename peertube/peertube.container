@@ -3,6 +3,8 @@ Image=docker.io/chocobozzz/peertube:production-bookworm
 ContainerName=peertube
 AutoUpdate=registry
 HostName=localhost
+#Notify=true
+LogDriver=journald
 
 PublishPort=9000:9000
 #PublishPort=1935:1935 # If you need live functionality

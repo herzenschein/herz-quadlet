@@ -2,6 +2,8 @@
 Image=docker.io/redis:alpine
 ContainerName=peertube-redis
 AutoUpdate=registry
+#Notify=true
+LogDriver=journald
 
 PublishPort=6379:6379
 

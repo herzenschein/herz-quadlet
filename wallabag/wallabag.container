@@ -3,6 +3,7 @@ Image=docker.io/wallabag/wallabag
 ContainerName=wallabag
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 PublishPort=8080:80
 Volume=wallabag-data:/var/www/wallabag/data

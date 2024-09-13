@@ -3,6 +3,7 @@ Image=docker.io/ekzhang/rustpad
 ContainerName=rustpad
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 PublishPort=3030:3030
 

@@ -3,6 +3,7 @@ Image=docker.io/redis:alpine
 ContainerName=firefish-redis
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 Network=firefishnet.network
 Volume=firefish-cache:/data:Z

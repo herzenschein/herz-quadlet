@@ -3,6 +3,7 @@ Image=quay.io/wekan/wekan
 ContainerName=wekan
 AutoUpdate=registry
 #Notify=true
+LogDriver=journald
 
 PublishPort=8080:8080
 
