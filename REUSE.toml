@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2024 Thiago Masato Costa Sueto <thiago.sueto@kde.org>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+version = 1
+SPDX-PackageName = "herz-quadlet"
+SPDX-PackageSupplier = "Thiago Masato Costa Sueto <thiago.sueto@kde.org>"
+SPDX-PackageDownloadLocation = "https://codeberg.org/herzenschein/herz-quadlet"
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Thiago Masato Costa Sueto <thiago.sueto@kde.org>"
+SPDX-License-Identifier = "GPL-3.0-or-later"
