@@ -1,18 +1,42 @@
 ## Running instructions
 
-This is a minimal example that just uses the default SQLite database.
-This will change in the future when I figure out a more robust default.
+This is a minimal example using PostgreSQL.
+This is in preparation for when Synapse comes with SlidingSync by default.
+
+With this setup, you'll have your Synapse server in `matrix.example.com`
+but your Homeserver will be `example.com`, so your users will show up as
+`@user:example.com`.
 
 ```
 systemctl daemon-reload --user
 systemctl start --user synapse-generate
+# Edit the generated data/homeserver.yaml file
+systemctl start --user synapse-postgres
 systemctl start --user synapse
 podman exec --interactive --tty synapse register_new_matrix_user http://localhost:8008 -c /data/homeserver.yaml
 ```
 
-Since the container does not come with `nano` or `vim`, the only way you may
-be able to edit `/data/homeserver.yaml` would be to mount the folder directly
-on your system.
+Required changes to the YAML file:
+
+```yaml
+database:
+  name: psycopg2
+  args:
+    user: synapse-postgres
+    password: <passwordSetInSynapsePostgresContainerFile>
+    dbname: synapse-postgres
+    host: <yourServerIP>
+    cp_min: 5
+    cp_max: 10
+```
+
+You can generate a random password with `pwgen --secure 13 1`.
+
+Recommendations to put in the YAML file:
+
+* `enable_registration: false` (after you add your main admin user)
+* `enable_authenticated_media: true` (to avoid unauthenticated media issues)
+* `use_presence: false` (decreases server load by not showing when you're online)
 
 ## Server naming and subdomains
 

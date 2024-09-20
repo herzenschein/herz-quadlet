@@ -6,9 +6,11 @@ AutoUpdate=registry
 LogDriver=journald
 
 PublishPort=8008:8008
-Volume=synapse-data:/data:z
+Volume=./data:/data:z
 
 UserNS=keep-id
+
+Network=synapsenet.network
 
 [Service]
 Restart=on-success

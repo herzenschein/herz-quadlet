@@ -6,7 +6,7 @@ AutoUpdate=registry
 LogDriver=journald
 
 PublishPort=8008:8008
-Volume=synapse-data:/data:z
+Volume=./data:/data:z
 
 Environment=SYNAPSE_SERVER_NAME=matrix.example.com
 Environment=SYNAPSE_REPORT_STATS=no

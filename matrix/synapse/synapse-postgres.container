@@ -1,0 +1,21 @@
+[Container]
+Image=docker.io/postgres:alpine
+ContainerName=synapse-postgres
+AutoUpdate=registry
+#Notify=true
+
+Environment=POSTGRES_USER=synapse-postgres
+Environment=POSTGRES_PASSWORD=passwordSetInHomeserverYamlFile
+Environment=POSTGRES_DB=synapse-postgres
+Environment=POSTGRES_INITDB_ARGS="--encoding=UTF8 --locale=C"
+
+PublishPort=5432:5432
+
+HostName=postgres
+
+Volume=synapse-postgres-data:/var/lib/postgresql/data:Z
+
+Network=synapsenet.network
+
+[Service]
+Restart=on-success
