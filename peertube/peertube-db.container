@@ -19,3 +19,4 @@ PartOf=peertube.service
 
 [Install]
 WantedBy=default.target
+WantedBy=peertube.service

@@ -20,3 +20,4 @@ Restart=on-success
 
 [Install]
 WantedBy=default.target
+WantedBy=writefreely-web.service

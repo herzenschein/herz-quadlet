@@ -13,3 +13,4 @@ Restart=on-success
 
 [Install]
 WantedBy=default.target
+WantedBy=firefish.service
