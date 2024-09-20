@@ -16,3 +16,6 @@ Restart=on-success
 
 [Unit]
 Wants=mediawiki-db.service
+
+[Install]
+WantedBy=default.target

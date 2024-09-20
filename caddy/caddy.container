@@ -16,3 +16,6 @@ Network=caddynet.network
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

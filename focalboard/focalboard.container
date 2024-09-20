@@ -9,3 +9,6 @@ PublishPort=8000:8000
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

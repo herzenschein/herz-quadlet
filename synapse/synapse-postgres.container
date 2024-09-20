@@ -19,3 +19,6 @@ Network=synapsenet.network
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

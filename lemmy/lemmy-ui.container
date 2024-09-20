@@ -19,3 +19,4 @@ Restart=on-success
 
 [Install]
 After=lemmy.service
+WantedBy=default.target

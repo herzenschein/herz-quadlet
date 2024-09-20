@@ -11,3 +11,6 @@ Volume=/path/to/your/music:/music:ro,z
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

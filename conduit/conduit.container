@@ -18,3 +18,6 @@ Environment=CONDUIT_MAX_CONCURRENT_REQUESTS="100"
 Environment=CONDUIT_LOG="warn,rocket=off,_=off,sled=off"
 
 UserNS=keep-id
+
+[Install]
+WantedBy=default.target

@@ -14,4 +14,4 @@ Network=gitlabnet.network
 Restart=on-success
 
 [Install]
-WantedBy=gitlab.service
+WantedBy=default.target

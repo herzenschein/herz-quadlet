@@ -19,3 +19,6 @@ Restart=on-success
 
 [Unit]
 Wants=writefreely-db.service
+
+[Install]
+WantedBy=default.target

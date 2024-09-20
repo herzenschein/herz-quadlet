@@ -21,3 +21,6 @@ Requires=peertube-db.service peertube-redis.service
 [Service]
 Restart=on-success
 TimeoutStartSec=900
+
+[Install]
+WantedBy=default.target

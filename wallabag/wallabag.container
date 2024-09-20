@@ -16,3 +16,6 @@ Environment=SYMFONY__ENV__SERVER_NAME="Your wallabag instance"
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

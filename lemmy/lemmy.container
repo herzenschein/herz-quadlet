@@ -30,3 +30,6 @@ Restart=on-success
 After=lemmy-db.service
 After=lemmy-pictrs.service
 
+
+[Install]
+WantedBy=default.target

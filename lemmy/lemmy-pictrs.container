@@ -24,3 +24,6 @@ UserNS=keep-id:uid=991,gid=991
 [Service]
 Restart=on-success
 
+
+[Install]
+WantedBy=default.target

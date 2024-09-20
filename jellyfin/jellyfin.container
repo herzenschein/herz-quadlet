@@ -14,3 +14,6 @@ Volume=/path/to/media:/media:z
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

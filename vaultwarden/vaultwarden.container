@@ -13,3 +13,6 @@ Volume=vaultwarden-data:/data:Z
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

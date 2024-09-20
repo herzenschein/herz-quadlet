@@ -16,3 +16,6 @@ Restart=on-success
 
 [Unit]
 PartOf=peertube.service
+
+[Install]
+WantedBy=default.target

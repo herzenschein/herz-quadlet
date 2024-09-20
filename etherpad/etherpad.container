@@ -24,3 +24,6 @@ Environment=MINIFY=false
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

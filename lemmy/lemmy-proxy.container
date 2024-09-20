@@ -18,3 +18,4 @@ Restart=on-success
 [Install]
 After=lemmy-pictrs.service
 After=lemmy-ui.service
+WantedBy=default.target

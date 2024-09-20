@@ -9,3 +9,6 @@ PublishPort=3030:3030
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

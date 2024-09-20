@@ -24,3 +24,6 @@ UserNS=keep-id
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

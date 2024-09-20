@@ -11,3 +11,6 @@ Volume=firefish-data:/var/lib/postgresql/data:Z
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

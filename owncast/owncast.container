@@ -12,3 +12,6 @@ Volume=owncast-data:/app/data:Z
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

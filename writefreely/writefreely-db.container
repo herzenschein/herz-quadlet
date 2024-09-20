@@ -19,4 +19,4 @@ Environment=MYSQL_PASSWORD=writefreelypass
 Restart=on-success
 
 [Install]
-WantedBy=writefreely-web.service
+WantedBy=default.target

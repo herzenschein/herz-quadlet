@@ -11,3 +11,6 @@ Volume=/run/user/1000/podman/podman.sock:/var/run/docker.sock:Z
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

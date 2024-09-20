@@ -12,3 +12,6 @@ Exec=server --poll 700ms
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

@@ -19,3 +19,6 @@ Exec="postgres -c session_preload_libraries=auto_explain -c auto_explain.log_min
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

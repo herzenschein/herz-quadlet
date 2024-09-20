@@ -10,3 +10,6 @@ Volume=/path/to/nitter.conf:/src/nitter.conf:ro,Z
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

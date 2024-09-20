@@ -23,3 +23,6 @@ Environment=ENABLE_FAIL2BAN=1
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

@@ -16,3 +16,6 @@ Requires=firefish-db.service firefish-redis.service
 
 [Service]
 Restart=on-success
+
+[Install]
+WantedBy=default.target

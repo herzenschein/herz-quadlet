@@ -13,3 +13,6 @@ Volume=gitea-config:/etc/gitea:Z
 [Service]
 Restart=on-success
 
+
+[Install]
+WantedBy=default.target
