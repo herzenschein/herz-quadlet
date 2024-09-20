@@ -22,3 +22,6 @@ Restart=on-success
 
 [Install]
 WantedBy=default.target
+
+[Unit]
+BindsTo=lemmy.service

@@ -19,3 +19,6 @@ Restart=on-success
 After=lemmy-pictrs.service
 After=lemmy-ui.service
 WantedBy=default.target
+
+[Unit]
+BindsTo=lemmy.service

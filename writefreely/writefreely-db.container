@@ -21,3 +21,6 @@ Restart=on-success
 [Install]
 WantedBy=default.target
 WantedBy=writefreely-web.service
+
+[Unit]
+BindsTo=writefreely-web.service

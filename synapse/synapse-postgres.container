@@ -23,3 +23,6 @@ Restart=on-success
 [Install]
 WantedBy=default.target
 WantedBy=synapse.service
+
+[Unit]
+BindsTo=synapse.service
