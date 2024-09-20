@@ -82,7 +82,7 @@ use rootful podman quadlets, change the images and configurations accordingly,
 as those might vary according to each upstream project.
 
 1. Create the folder `~/.config/containers/systemd/`.
-2. Copy the `owncast.container` file to `~/.config/containers/systemd/`.
+2. Copy the `owncast/` folder to `~/.config/containers/systemd/`.
 3. Run `systemctl daemon-reload --user`.
 4. Run `systemctl start --user owncast`.
 
