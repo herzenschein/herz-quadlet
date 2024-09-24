@@ -7,17 +7,36 @@ point to it in `HostName=` and `external_url`. The container file includes
 Start the container:
 
 ```bash
+podman pull docker.io/gitlab/gitlab-ce
 systemctl daemon-reload --user
 systemctl start --user gitlab
 ```
 
-Once you are able to see the webpage on `http://yourIP:8888` and before 24 hours pass, run:
+Because the Gitlab image has about 6 GiB in size, pulling the container image
+directly via the quadlet is not advised, as it might exceed the default 5 min
+systemd timeout by a large margin. Depending on your internet connection,
+it can take from 12 to 20 minutes for the image to be pulled.
+
+After that, once the service is started, Gitlab should take about 5 minutes
+before it is fully set up. You will know that the service is fully set up when
+you start seeing a lot of JSON text like `{"severity":"INFO", etc` in the logs
+with `journalctl --follow --user-unit gitlab`.
+
+Once you are able to see the webpage on
+`http://yourIP:8888` and before 24 hours pass, run:
 
 ```bash
 podman exec --interactive --tty gitlab grep 'Password:' /etc/gitlab/initial_root_password
 ```
 
-You should then be able to log in as the user `root` using the above password.
+Do not run the above command immediately after starting the service with
+systemctl, otherwise you might get the error
+`grep: /etc/gitlab/initial_root_password: No such file or directory`
+because Gitlab has not created this file yet.
+Wait at least 30 seconds before running it.
+
+You should then be able to log in as the user `root` using the password gotten
+via the above command.
 Once logged in, you may visit the administrative area by going to
 `yourIP:8888/admin`.
 
