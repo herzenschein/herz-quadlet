@@ -24,3 +24,34 @@ WantedBy=default.target
 To all containers that do not have "generate", "build", or "init" in their name (in other words, containers that are supposed to start on boot).
 
 If the entry already exists, it will simply change the existing value.
+
+## Making a container start only after a device is mounted
+
+The easiest way to do this is with
+[x-systemd.automount](https://www.freedesktop.org/software/systemd/man/latest/systemd.mount.html#fstab) on a user directory.
+
+In your `/etc/fstab`, create an entry that points to one of your user directories,
+then add `x-systemd.automount` to the end of the comma-separated options. For example:
+
+```bash
+# uid and gid are included for exFAT support
+/dev/sda2 /home/youruser/externalstorage auto rw,users,nofail,uid=1000,gid=1000,x-systemd.automount 0 0
+```
+
+To apply the settings immediately, run:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart remote-fs.target local-fs.target
+```
+
+This will make systemd automatically generate the following files: `home-youruser-externalstorage.mount` and `home-youruser-externalstorage.automount`.
+
+To make the service load on boot and depend on the external storage mount,
+add the following to the install section of your container file:
+
+```ini
+WantedBy=default.target home-youruser-externalstorage.mount
+```
+
+Done.
