@@ -1,0 +1,17 @@
+[Container]
+Image=docker.io/freshrss/freshrss:latest
+ContainerName=freshrss
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=8080:80
+
+Volume=freshrss-data:/var/www/FreshRSS/data:Z
+Volume=freshrss-extensions:/var/www/FreshRSS/extensions:Z
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
