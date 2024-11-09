@@ -1,0 +1,16 @@
+[Container]
+Image=docker.io/vectorim/element-web:latest
+ContainerName=element
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=8080:80
+
+Volume=./config.json:/app/config.json:ro,Z
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
