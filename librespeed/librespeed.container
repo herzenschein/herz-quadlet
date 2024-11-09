@@ -1,0 +1,16 @@
+[Container]
+Image=ghcr.io/librespeed/speedtest:latest
+ContainerName=librespeed
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=8080:80
+
+Environment=TITLE=LibreSpeed
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
