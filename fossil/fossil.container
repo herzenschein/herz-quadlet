@@ -1,0 +1,16 @@
+[Container]
+Image=docker.io/nijtmans/fossil:latest
+ContainerName=fossil
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=8080:8080
+
+Volume=/path/to/your/repo:/museum:z
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
