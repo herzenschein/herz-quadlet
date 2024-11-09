@@ -1,0 +1,15 @@
+[Container]
+Image=docker.io/nextcloud:latest
+ContainerName=nextcloud
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=8080:80
+Volume=nextcloud-data:/var/www/html:z
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
