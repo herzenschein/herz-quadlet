@@ -100,6 +100,14 @@ generated services.
 * `journalctl enable-linger youruser`: let systemd services run while your
 user is not logged in.
 
+## Automatic updates
+
+Unlike Docker which requires additional software like Watchtower, Podman Quadlets come with the functionality to fetch and update containers by default.
+
+The container name must be fully qualified: that means something like `docker.io/owncast/owncast:latest`.
+
+You can either manually run `podman auto-update` or enable its respective systemd service: `sudo systemctl enable podman-auto-update`.
+
 ## What do you need to use Quadlets?
 
 * [Podman 4.4.0](https://github.com/containers/podman/releases/tag/v4.4.0) or greater
