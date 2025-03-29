@@ -1,0 +1,17 @@
+[Container]
+Image=docker.io/shish2k/shimmie2:latest
+ContainerName=shimmie2
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=8000:8000
+Volume=shimmie2-data:/app/data
+
+# UserNS=keep-id
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
