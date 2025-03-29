@@ -1,0 +1,29 @@
+[Container]
+Image=docker.io/stashapp/stash:latest
+ContainerName=stash
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=9999:9999
+
+Volume=/path/to/media:/data:z
+Volume=stash-config:/root/.stash:Z
+Volume=stash-metadata:/metadata:Z
+Volume=stash-cache:/cache:Z
+Volume=stash-blobs:/blobs:Z
+Volume=stash-generated:/generated:Z
+
+# Environment=STASH_STASH=/data/
+# Environment=STASH_GENERATED=/generated/
+# Environment=STASH_METADATA=/metadata/
+# Environment=STASH_CACHE=/cache/
+# Environment=STASH_PORT=9999
+
+PodmanArgs=--log-opt 'max-file=10' --log-opt 'max-size=2m'
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
