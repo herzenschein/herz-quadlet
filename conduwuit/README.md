@@ -1,3 +1,12 @@
+## Summary
+
+Conduwuit is a [Matrix](https://matrix.org/) homeserver.
+It can be used to create your own Matrix community or to set up a single-user server.
+
+It is a fork of [Conduit](https://conduit.rs/).
+
+Main website: https://conduwuit.puppyirl.gay/
+
 ## Running instructions
 
 Change the `CONDUWUIT_SERVER_NAME` to the actual subdomain or domain you'll be using for Conduwuit.
