@@ -12,6 +12,7 @@ systemctl daemon-reload --user
 systemctl start --user synapse-generate
 # Edit the generated data/homeserver.yaml file
 systemctl start --user synapse-postgres
+# If synapse-postgres fails to start, start it again and it will work
 systemctl start --user synapse
 podman exec --interactive --tty synapse register_new_matrix_user http://localhost:8008 -c /data/homeserver.yaml
 ```
