@@ -26,7 +26,7 @@ database:
     user: synapse-postgres
     password: <passwordSetInSynapsePostgresContainerFile>
     dbname: synapse-postgres
-    host: <yourServerIP>
+    host: synapse-postgres
     cp_min: 5
     cp_max: 10
 ```
