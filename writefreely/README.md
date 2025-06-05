@@ -1,9 +1,5 @@
 ## Running instructions
 
-See my other repo for a detailed explanation on how to set WriteFreely up:
-
-https://github.com/herzenschein/herz-podman/tree/main/writefreely
-
 Quickstart:
 
 Create a `config.ini` file somewhere on your machine, then edit
