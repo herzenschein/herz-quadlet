@@ -1,0 +1,17 @@
+[Container]
+Image=ghcr.io/techarohq/anubis:latest
+ContainerName=anubis
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+Environment="BIND=:8080"
+Environment="TARGET=http://localhost:8080"
+
+Network=anubis.network
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
