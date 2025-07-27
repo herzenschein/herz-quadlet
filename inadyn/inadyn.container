@@ -1,0 +1,14 @@
+[Container]
+Image=docker.io/troglobit/inadyn
+ContainerName=inadyn
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+Volume=/path/to/inadyn.conf:/etc/inadyn.conf:ro,Z
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
