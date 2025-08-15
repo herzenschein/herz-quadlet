@@ -1,0 +1,25 @@
+[Container]
+Image=forgejo.ellis.link/continuwuation/continuwuity:latest
+ContainerName=continuwuity
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=8448:6167
+
+Volume=conduwuit-db:/var/lib/continuwuity
+# Volume=./continuwuity.toml:/etc/continuwuity.toml
+
+Environment=CONTINUWUITY_ADDRESS=0.0.0.0
+Environment=CONTINUWUITY_SERVER_NAME=uwu.example.com
+Environment=CONTINUWUITY_PORT=6167
+Environment=CONTINUWUITY_ALLOW_REGISTRATION=true
+Environment=CONTINUWUITY_REGISTRATION_TOKEN=generatedTokenHere
+Environment=CONTINUWUITY_DATABASE_PATH=/var/lib/continuwuity
+# Environment=CONTINUWUITY_ALLOW_FEDERATION=true
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
