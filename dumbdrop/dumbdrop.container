@@ -1,0 +1,20 @@
+[Container]
+Image=docker.io/dumbwareio/dumbdrop:latest
+ContainerName=dumbdrop
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=3000:3000
+Environment=UPLOAD_DIR=/app/uploads
+Environment=DUMBDROP_PIN=upto10digitshere
+Environment=MAX_FILE_SIZE=30000
+# Environment=BASE_URL=example.com
+
+Volume=/path/to/dump/folder:/app/uploads:z
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
