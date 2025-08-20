@@ -1,0 +1,15 @@
+[Container]
+Image=docker.io/onlyoffice/documentserver:latest
+ContainerName=onlyoffice
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=1888:80
+Environment=JWT_SECRET=tokenhere
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
