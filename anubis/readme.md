@@ -7,14 +7,25 @@ You can change the `Network=` to point to an existing network where your reverse
 Then change the Caddy config (or other reverse proxy configuration you have) to follow usptream: https://anubis.techaro.lol/docs/admin/environments/caddy
 
 ```
-# conf/Caddyfile
-
 yourdomain.example.com {
-  tls your@email.address
-
   reverse_proxy http://anubis:3000 {
         header_up X-Real-Ip {remote_host}
         header_up X-Http-Version {http.request.proto}
     }
+}
+```
+
+Alternatively, consider using [caddy-anubis](https://github.com/daegalus/caddy-anubis). This does not require setting an Anubis instance for each individual service.
+
+You will need to create a custom Caddy container with the plugin following the [Docker documentation](https://hub.docker.com/_/caddy#adding-custom-caddy-modules), making sure to build for the right architecture.
+
+After starting the new container, you can hide services behind Anubis with the following snippet:
+
+```
+yourdomain.example.com {
+	reverse_proxy myservice:someport
+	anubis
+	request_header +X-Real-IP {remote_host}
+	request_header +X-Forwarded-For {remote_host}
 }
 ```
