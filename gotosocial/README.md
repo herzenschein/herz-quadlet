@@ -1,4 +1,20 @@
-== Running instructions ==
+## Summary
+
+GoToSocial is an [ActivityPub](https://activitypub.rocks/) social network server to access the [Fediverse](https://en.wikipedia.org/wiki/Fediverse) for small or single user instances on low powered devices.
+
+* Main website: https://gotosocial.org/
+* Container docs:
+  * https://docs.gotosocial.org/en/latest/getting_started/installation/container/
+* See also:
+  * [Owncast](../owncast)
+  * [PeerTube](../peertube)
+  * [Writefreely](../writefreely)
+
+## Running instructions
+
+Copy this folder to `~/.config/containers/systemd/`.
+
+Then run:
 
 ```bash
 systemctl daemon-reload --user
@@ -15,3 +31,5 @@ podman exec -it gotosocial /gotosocial/gotosocial admin account create \
     --email someone@example.org \
     --password 'some_very_good_password'
 ```
+
+You can generate a random password using `pwgen --secure 13 1`.
