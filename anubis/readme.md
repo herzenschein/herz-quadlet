@@ -1,8 +1,28 @@
+## Summary
+
+Anubis is a Web AI Firewall Utility that protect your website from scraper bots.
+
+* Main website: https://anubis.techaro.lol/
+* Container docs:
+  * https://anubis.techaro.lol/docs/admin/environments/docker-compose
+  * https://github.com/daegalus/caddy-anubis
+* See also:
+  * [Caddy](../caddy)
+
 ## Running instructions
+
+Copy this folder to `~/.config/containers/systemd/`.
 
 Change the environment variables to point to where the service you want to protect is hosted.
 
 You can change the `Network=` to point to an existing network where your reverse proxy is.
+
+Then run:
+
+```bash
+systemctl daemon-reload --user
+systemctl start --user anubis
+```
 
 Then change the Caddy config (or other reverse proxy configuration you have) to follow usptream: https://anubis.techaro.lol/docs/admin/environments/caddy
 
