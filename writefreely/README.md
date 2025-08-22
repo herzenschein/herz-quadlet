@@ -1,6 +1,17 @@
+## Summary
+
+WriteFreely is an [ActivityPub](https://activitypub.rocks/) blog writing platform that is federated across the [Fediverse](https://en.wikipedia.org/wiki/Fediverse) designed for single or multiple users.
+
+* Main website: https://writefreely.org/
+* Container docs:
+  * https://docs.kanboard.org/v1/admin/docker/
+* See also:
+  * [GoToSocial](../gotosocial)
+  * [PeerTube](../peertube)
+
 ## Running instructions
 
-Quickstart:
+Copy this folder to `~/.config/containers/systemd/`.
 
 Create a `config.ini` file somewhere on your machine, then edit
 writefreely-generate, writefreely-web and writefreely-dbinit to point to
