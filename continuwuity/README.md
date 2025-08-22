@@ -5,15 +5,26 @@ It can be used to create your own Matrix community or to set up a single-user se
 
 It is a fork of the now dead [Conduwuit](https://conduwuit.puppyirl.gay/), which itself was a fork of [Conduit](https://conduit.rs/).
 
-Main website: https://continuwuity.org
+It aims to be stable (contrary to its predecessor which was bleeding edge) and provides administrative tools by default.
+
+* Main website: https://continuwuity.org
+* Container docs:
+  * https://continuwuity.org/deploying/docker
+* See also:
+  * [Conduit](../conduit)
+  * [Synapse](../synapse)
+  * [Cinny](../cinny)
+  * [Element](../element)
 
 ## Running instructions
+
+Copy this folder to `~/.config/containers/systemd/`.
 
 Change the `CONTINUWUITY_SERVER_NAME` to the actual subdomain or domain you'll be using for Conduwuit.
 
 Change `CONTINUWUITY_REGISTRATION_TOKEN` to a random key. You can do that with something like `pwgen --secure 13 1`.
 
-Then:
+Then run:
 
 ```bash
 systemctl daemon-reload --user
