@@ -1,4 +1,19 @@
+## Summary
+
+Gitea is a web git forge that is a hard fork of [Gogs](https://gogs.io/).
+
+* Main website: https://gitea.com
+* Container docs:
+  * https://docs.gitea.com/installation/install-with-docker-rootless
+  * https://docs.gitea.com/installation/install-with-docker
+* See also:
+  * [Forgejo](../forgejo)
+  * [Gitea](../gitea)
+  * [Fossil](../fossil)
+
 ## Running instructions
+
+Copy this folder to `~/.config/containers/systemd/`.
 
 Grab your IP using `ip --brief address` and then change gitlab.container to
 point to it in `HostName=` and `external_url`. The container file includes
