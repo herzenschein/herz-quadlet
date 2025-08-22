@@ -31,9 +31,6 @@ All quadlets available here are expected to follow this behavior:
 
 Quadlets are a new way to manage containers. They consist of `.container` files.
 
-They were originally a [separate project](https://github.com/containers/quadlet)
-which has now been merged into [Podman](https://github.com/containers/podman).
-
 By writing an INI file with the `.container` extension (as well as `.network`,
 `.volume` and `.kube` if needed) and storing it in a certain directory,
 [systemd](https://systemd.io/) is able to automatically generate a systemd
@@ -130,23 +127,6 @@ You might also want to look at
 to learn more about how to manage systemd services.
 
 ## Current caveats
-
-* The current documentation is scarce, and the only true documentation is a
-manpage, namely
-[podman-systemd.unit](https://docs.podman.io/en/latest/markdown/podman-systemd.unit.5.html),
-which is far from ideal. There is the
-[docs folder of the original project](https://github.com/containers/quadlet/blob/main/docs/),
-and while useful, it is severely outdated.
-
-* If your podman container setup relies on
-[Kubernetes Pods](https://kubernetes.io/docs/concepts/workloads/pods/) /
-[Podman Pods](https://docs.podman.io/en/latest/markdown/podman-pod.1.html)
-instead of [Docker Networks](https://docs.docker.com/network/), you are either
-forced to write your own
-[Kubernetes Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
-files, generate Kubernetes Deployment files with
-[podman-kube-generate](https://docs.podman.io/en/latest/markdown/podman-kube-generate.1.html),
-or rewrite your setup to use Docker Networks instead (the easiest option).
 
 * Depending on your Podman version, not all entries in `podman-systemd.unit`
 might be supported. In that case, use the respective Podman command line flags
