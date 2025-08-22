@@ -1,4 +1,14 @@
+## Summary
+
+Gemini is a [Gemini Protocol](https://geminiquickst.art/)-using server for hosting websites starting with the `gemini://` URI instead of `https://`.
+
+* Main website: https://github.com/a-h/gemini
+* Container docs:
+  * https://github.com/a-h/gemini#gemini-server-docker-image
+
 ## Running instructions
+
+Copy this folder to `~/.config/containers/systemd/`.
 
 Navigate to ~/.config/containers/systemd/gemini/certs, then run:
 
