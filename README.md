@@ -8,6 +8,8 @@ The main repository now resides in [Codeberg](https://codeberg.org/herzenschein/
 the [Github](https://github.com/herzenschein/herz-quadlet) repository is now a mirror.
 Issues can be reported in either.
 
+> If you don't want to read any of this and just want to get started with Quadlets, see the [Quickstart](#quickstart).
+
 ## The expectations of this repository
 
 This repository is rather opinionated:
@@ -73,7 +75,7 @@ Podman user unit search path:
 If you have no idea how to get started or you are using rootless Podman, store
 your container files in ~/.config/containers/systemd/ and run them as a user.
 
-## Quickstart
+## Quickstart {#quickstart}
 
 This quickstart assumes you will be using rootless containers. If you want to
 use rootful podman quadlets, change the images and configurations accordingly,
