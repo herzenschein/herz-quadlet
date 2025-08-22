@@ -12,9 +12,8 @@ Issues can be reported in either.
 This repository is rather opinionated:
 
 * Only the `latest` tag is used, unless it's not possible to do so
-  * It's a moving target, so this repository is never outdated
+  * It's a moving target, so container changes are caught faster
   * An up-to-date service is a service with all patches and CVEs covered ASAP
-  * It allows for auto-updates with default fallbacks
 * The quadlets are designed for rootless podman, not rootful podman
 * The directory structure is like this so you can simply copy the folder of the project you want to ~/.config/containers/systemd
   * Podman supports an extra directory level in ~/.config/containers/systemd
@@ -113,7 +112,6 @@ You can either manually run `podman auto-update` or enable its respective system
 * [Podman 4.4.0](https://github.com/containers/podman/releases/tag/v4.4.0) or greater
 * [Crun](https://github.com/containers/crun)
 * [Have CGroupsV2 enabled](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_monitoring_and_updating_the_kernel/using-cgroups-v2-to-control-distribution-of-cpu-time-for-applications_managing-monitoring-and-updating-the-kernel#mounting-cgroups-v2_using-cgroups-v2-to-control-distribution-of-cpu-time-for-applications)
-* systemd-container
 
 ## Learn more about Quadlets
 
