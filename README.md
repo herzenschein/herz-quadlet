@@ -78,10 +78,10 @@ This quickstart assumes you will be using rootless containers. If you want to
 use rootful podman quadlets, change the images and configurations accordingly,
 as those might vary according to each upstream project.
 
-1. Create the folder `~/.config/containers/systemd/`.
-2. Copy the `owncast/` folder to `~/.config/containers/systemd/`.
-3. Run `systemctl daemon-reload --user`.
-4. Run `systemctl start --user owncast`.
+1. Create the folder `~/.config/containers/systemd/`
+2. Copy the `owncast/` folder to `~/.config/containers/systemd/`
+3. Run `systemctl daemon-reload --user`
+4. Run `systemctl start --user owncast`
 
 Done, you now have your own selfhosted [Owncast](https://owncast.online/)
 instance! You can visit it under `localhost:8080` and configure it under
@@ -89,13 +89,13 @@ instance! You can visit it under `localhost:8080` and configure it under
 
 Additionally, the following commands might be useful to you:
 
-* `systemctl status --user owncast`: check the Owncast service status.
+* `systemctl status --user owncast`: check the Owncast service status
 * `systemctl list-unit-files --user --all --state generated`: list all
-generated services.
-* `journalctl --user-unit owncast`: see the logs for your Owncast container.
-* `podman stats owncast`: monitor the status of your Owncast container.
+generated services
+* `journalctl --user-unit owncast`: see the logs for your Owncast container
+* `podman stats owncast`: monitor the stats of your Owncast container
 * `journalctl enable-linger youruser`: let systemd services run while your
-user is not logged in.
+user is not logged in
 
 ## Automatic updates
 
