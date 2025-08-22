@@ -1,5 +1,6 @@
 # herz-quadlet
-A repository where I store my podman quadlets.
+
+The largest, best curated repository for Podman Quadlets on the internet.
 
 All quadlets in this repo are rootless.
 
