@@ -1,6 +1,18 @@
+## Summary
+
+Inadyn is an automated dynamic DNS client that lets you update DNS records automatically when your dynamic IP changes.
+
+* Main website: https://troglobit.com/projects/inadyn/
+* Container docs:
+  * https://github.com/troglobit/inadyn#docker
+* See also:
+  * [Caddy](../caddy)
+
 ## Running instructions
 
-First, download one of the example configuration files from the [upstream examples list](https://github.com/troglobit/inadyn/tree/master/examples):
+Copy this folder to `~/.config/containers/systemd/`.
+
+Download one of the example configuration files from the [upstream examples list](https://github.com/troglobit/inadyn/tree/master/examples):
 
 ```bash
 wget https://raw.githubusercontent.com/troglobit/inadyn/refs/heads/master/examples/cloudflare-ipv6-only.conf --output-document inadyn.conf
