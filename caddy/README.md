@@ -3,11 +3,12 @@
 Caddy is a web server and reverse proxy with automatic HTTPS. It can be used to make IP addresses accessible via HTTPS and a (sub)domain.
 
 * Main website: https://caddyserver.com/
-* Container links: https://hub.docker.com/_/caddy
+* Container docs:
+  * https://hub.docker.com/_/caddy
 
 ## Running instructions
 
-Copy this folder to `~/.config/containers/systemd/caddy/`.
+Copy this folder to `~/.config/containers/systemd/`.
 
 Then run:
 
