@@ -1,4 +1,18 @@
+## Summary
+
+Peppermint is an issue management tracker.
+
+* Main website: https://peppermint.sh/
+* Container docs:
+  * https://docs.peppermint.sh/docker
+* See also:
+  * [Focalboard](../focalboard)
+  * [Kanboard](../kanboard)
+  * [Wekan](../wekan)
+
 ## Running instructions
+
+Copy this folder to `~/.config/containers/systemd/`.
 
 Modify:
 
