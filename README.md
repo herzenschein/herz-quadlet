@@ -145,7 +145,7 @@ The following is a good read on how unit dependencies behave in systemd:
 ## Advantages of Quadlets
 
 * Podman Pods require you to define ports and whatnot at Pod creation time,
-which can be unpractical if you need to change your setup in the future. With
+which can be impractical if you need to change your setup in the future. With
 Quadlets, you alter the container file, reload the daemon and restart the service.
 
 * Using podman-generate-systemd always generates complex and hard-to-read
