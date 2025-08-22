@@ -17,6 +17,7 @@ This repository is rather opinionated:
 * The quadlets are designed for rootless podman, not rootful podman
 * The directory structure is like this so you can simply copy the folder of the project you want to ~/.config/containers/systemd
   * Podman supports an extra directory level in ~/.config/containers/systemd
+* Kube quadlets are not used
 
 All quadlets available here are expected to follow this behavior:
 
