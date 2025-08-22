@@ -1,4 +1,18 @@
+## Summary
+
+PeerTube is a distributed [YouTube](https://youtube.com/)-like video hosting service that is federated across the [Fediverse](https://en.wikipedia.org/wiki/Fediverse).
+
+* Main website: https://joinpeertube.org/
+* Container docs:
+  * https://docs.joinpeertube.org/install/docker
+* See also:
+  * [Owncast](../owncast)
+  * [WriteFreely](../writefreely)
+  * [GoToSocial](../gotosocial)
+
 ## Running instructions
+
+Copy this folder to `~/.config/containers/systemd/`.
 
 Edit the `HostName=` in `peertube.container` to match `PEERTUBE_WEBSERVER_HOSTNAME=` in the env file.
 By default localhost should work for local testing, but you should instead use your IP or domain.
