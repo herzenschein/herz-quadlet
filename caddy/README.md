@@ -147,3 +147,7 @@ And restart the container:
 systemctl daemon-reload --user
 systemctl restart --user caddy
 ```
+
+> [!NOTE]
+> You will need to build Caddy according to your architecture (amd64, arm64).
+> Depending on your system you may not be able to use --arch or --platform for this, thus you should build the container in the platform of choice.
