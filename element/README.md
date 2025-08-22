@@ -1,6 +1,21 @@
+## Summary
+
+Element is a [Matrix](https://matrix.org/) chat client.
+
+* Main website: https://cinny.in/
+* Container docs:
+  * https://github.com/cinnyapp/cinny#self-hosting
+* See also:
+  * [Cinny](../cinny)
+  * [Conduit](../conduit)
+  * [Continuwuity](../continuwuity)
+  * [Synapse](../synapse)
+
 ## Running instructions
 
-First download the configuration file to the same directory as the cinny container file, then run it:
+Copy this folder to `~/.config/containers/systemd/`.
+
+First download the configuration file to the same directory as the element container file, then run it:
 
 ```bash
 wget https://raw.githubusercontent.com/element-hq/element-web/refs/heads/develop/config.sample.json --output-document ~/.config/containers/systemd/element/config.json
