@@ -1,4 +1,16 @@
+## Summary
+
+MediaWiki is wiki software. It powers [Wikipedia](https://www.wikipedia.org/).
+
+* Main website: https://www.mediawiki.org/wiki/MediaWiki
+* Container docs:
+  * https://hub.docker.com/_/mediawiki
+
 ## Running instructions
+
+Copy this folder to `~/.config/containers/systemd/`.
+
+Then run:
 
 ```bash
 systemctl daemon-reload --user
