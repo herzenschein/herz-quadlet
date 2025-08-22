@@ -1,4 +1,23 @@
+## Summary
+
+Synapse is a [Matrix](https://matrix.org/) server that is written in Python and uses PostgreSQL.
+
+It aims to be stable (which means slower updates), but provides no administrative tools by default, requiring you to use curl commands to administer your Synapse server. For that you will need [synapse-admin](https://github.com/etkecc/synapse-admin).
+
+* Main website: https://github.com/element-hq/synapse
+* Container docs:
+  * https://element-hq.github.io/synapse/latest/setup/installation.html#docker-images-and-ansible-playbooks
+  * https://github.com/element-hq/synapse/tree/develop/contrib/docker
+* See also:
+  * [Conduit](./conduit)
+  * [Continuwuity](./continuwuity)
+  * [Cinny](./cinny)
+  * [Element](./element)
+  * [synapse-admin](../synapse-admin)
+
 ## Running instructions
+
+Copy this folder to `~/.config/containers/systemd/`.
 
 This is a minimal example using PostgreSQL.
 This is in preparation for when Synapse comes with SlidingSync by default.
