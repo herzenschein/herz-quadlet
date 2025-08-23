@@ -1,0 +1,14 @@
+[Container]
+Image=docker.io/lissy93/web-check:latest
+ContainerName=web-check
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=3000:3000
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
