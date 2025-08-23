@@ -1,0 +1,17 @@
+[Container]
+Image=docker.io/searxng/searxng:latest
+ContainerName=searxng
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=8080:8080
+
+Volume=searxng-config:/etc/searxng/:Z
+Volume=searxng-data:/var/cache/searxng/:Z
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
