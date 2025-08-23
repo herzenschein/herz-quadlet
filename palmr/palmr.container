@@ -1,0 +1,23 @@
+[Container]
+Image=docker.io/kyantech/palmr:latest
+ContainerName=palmr
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=5487:5487
+PublishPort=3333:3333
+Environment=PALMR_UID=1000
+Environment=PALMR_GID=1000
+# Environment=SECURE_SITE=false
+# Environment=DISABLE_FILESYSTEM_ENCRYPTION=true
+# Environment=ENCRYPTION_KEY=your-secure-key-min-32-chars
+# Environment=DEFAULT_LANGUAGE=en-US
+
+Volume=palmr-data:/app/server:Z
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
