@@ -1,0 +1,19 @@
+[Container]
+Image=ghcr.io/southclaws/storyden:latest
+ContainerName=storyden
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=8000:8000
+
+# Environment=PUBLIC_WEB_ADDRESS=https://example.com
+# Environment=PUBLIC_API_ADDRESS=https://api.example.com
+
+Volume=storyden-data:/storyden/data:Z
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
