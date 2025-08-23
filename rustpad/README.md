@@ -8,6 +8,7 @@ Rustpad is a collaborative web text editor with a focus on code.
 * See also:
   * [Etherpad](../etherpad)
   * [Silverbullet](../silverbullet)
+  * [Memos](../memos)
 
 ## Running instructions
 

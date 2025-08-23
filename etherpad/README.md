@@ -9,6 +9,7 @@ Etherpad is a collaborative online editor for plain text / HTML files with a ric
 * See also:
   * [Rustpad](../rustpad)
   * [Silverbullet](../silverbullet)
+  * [Memos](../memos)
 
 ## Running instructions
 

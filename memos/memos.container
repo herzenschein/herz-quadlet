@@ -1,0 +1,18 @@
+[Container]
+Image=docker.io/neosmemo/memos:latest
+ContainerName=memos
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=5230:5230
+
+Environment=MEMOS_MODE=prod
+# Environment=MEMOS_DRIVER=sqlite
+Volume=/path/to/memos:/var/opt/memos:Z
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target

@@ -10,6 +10,7 @@ It is simple to use, has the best Markdown QoL features I've seen in any Markdow
 * See also:
   * [Etherpad](../etherpad)
   * [Rustpad](../rustpad)
+  * [Memos](../memos)
 
 ## Running instructions
 
