@@ -1,0 +1,16 @@
+[Container]
+Image=docker.io/apache/answer:latest
+ContainerName=answer
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=9080:80
+
+Volume=answer-data:/data:Z
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
