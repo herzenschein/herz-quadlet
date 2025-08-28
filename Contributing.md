@@ -19,3 +19,37 @@ All quadlets available here are expected to follow this behavior:
 * All quadlets are supposed to force log to systemd even if you have set it up to not do that (LogDriver)
 
 ## Contribution guidelines
+
+Any contributions are automatically assigned a GPL-3.0-or-later license unless you specifically [add an SPDX entry](https://community.kde.org/Guidelines_and_HOWTOs/Licensing) to your contributed file. The license should be FOSS, whether that's copyleft or permissive.
+
+Quadlets must always Just Work. This means they need to be tested before being added to this repository. I have personally tested every single Quadlet in this repository.
+
+Quadlets must be simple by default.
+Any highly specific or complex customizations should go to the [How To](HowTo.md).
+This includes [Kube quadlet units](docs.podman.io/en/latest/markdown/podman-systemd.unit.5.html#pod-units-pod)
+or Quadlet [Pod quadlet units](docs.podman.io/en/latest/markdown/podman-systemd.unit.5.html#pod-units-pod).
+
+Container images must be at least *mostly qualified*.
+This means they need to have the domain of the website that hosts the image,
+whether that is Dockerhub's <docker.io>, Quay's <quay.io>, Github's <ghcr.io>, or something else.
+This is a [best practice](https://www.redhat.com/en/blog/be-careful-when-pulling-images-short-name) in the container world.
+In addition to that, you want to ensure that the user is getting the right first-party image where possible
+instead of some random third-party container image.
+
+Container names must follow the upstream name *in some way*. It doesn't need to be exactly the same.
+For example, `docker-mailserver` is the upstream name, but I use `dockermailserver` instead.
+
+The container name for the main user-facing service
+should be just the upstream name instead of generic names like `web` or `app`.
+Other necessary components get the upstream name + `-suffix`, for example, `mediawiki-db`.
+It always should match the `ContainerName=` entry.
+This is because this repository doesn't default to Pods,
+and because it renders nice container names in terminal output,
+making it more user friendly.
+
+If a container requires a database, use either the simplest solution (often SQLite) or the upstream-preferred solution (often PostgreSQL or MariaDB), but choose only one. Other container databases should simply have their own Quadlet directory and have proper documentation such that they can be easily used with any Quadlet that requires them.
+
+Only reverse proxies should make direct use of the 80 and 443 outbound ports.
+For example, Cinny publishes the inbound port 80, but it is mapped to the outbound port 8080.
+This makes it less annoying to test the containers locally,
+as using these ports requires `net.ipv4.ip_unprivileged_port_start=80`.
