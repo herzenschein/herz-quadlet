@@ -71,7 +71,7 @@ user is not logged in
 
 Unlike Docker which requires additional software like Watchtower, Podman Quadlets come with the functionality to fetch and update containers by default.
 
-The container name must be fully qualified: that means something like `docker.io/owncast/owncast:latest`.
+The container image name must be fully qualified: that means something like `docker.io/owncast/owncast:latest`.
 
 You can either manually run `podman auto-update` or enable its respective systemd service: `sudo systemctl enable podman-auto-update`.
 
