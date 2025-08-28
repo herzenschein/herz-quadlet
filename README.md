@@ -1,4 +1,4 @@
-# 📦 herz-quadlet
+# 📦herz-quadlet
 
 The largest, best curated repository for Podman Quadlets on the internet.
 
@@ -42,7 +42,7 @@ Podman user unit search path:
 If you have no idea how to get started or you are using rootless Podman, store
 your container files in ~/.config/containers/systemd/ and run them as a user.
 
-## 🚀 Quickstart
+## 🚀Quickstart
 
 This quickstart assumes you will be using rootless containers. If you want to
 use rootful podman quadlets, change the images and configurations accordingly,
