@@ -1,0 +1,13 @@
+{
+  "settings": [
+    {
+      "provider": "cloudflare",
+      "zone_identifier": "some id",
+      "domain": "domain.com",
+      "ttl": 1,
+      "token": "yourtoken",
+      "ip_version": "ipv6",
+      "proxied": true
+    }
+  ]
+}
