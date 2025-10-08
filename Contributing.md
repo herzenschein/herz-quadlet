@@ -18,9 +18,15 @@ All quadlets available here are expected to follow this behavior:
 * If a service has dependencies, when the service crashes or stops, all its dependencies should stop (BindsTo)
 * All quadlets are supposed to log to systemd unless you have set it up to not do that (LogDriver)
 
-## Contribution guidelines
+## Licensing
 
-Any contributions are automatically assigned a GPL-3.0-or-later license unless you specifically [add an SPDX entry](https://community.kde.org/Guidelines_and_HOWTOs/Licensing) to your contributed file. The license should be FOSS, whether that's copyleft or permissive.
+Any contributions are automatically assigned a GPL-3.0-or-later license unless you specifically [add an SPDX entry](https://community.kde.org/Guidelines_and_HOWTOs/Licensing) to your contributed file. The license should be FOSS, whether that's copyleft or permissive. The licensing choice implies some things:
+
+* Nothing will affect the average user (including companies), as Quadlets are primarily for internal use (and the GPL does not require anything from you for internal use)
+* In the extremely unlikely scenario where companies distribute Quadlets, they should make any modifications public instead of being closed-source leeches
+* Other people wanting to modify Quadlets I wrote for their own distribution are *technically* supposed to also make them GPLv3, but in practice what I want is that, like me, you also keep them open source and accessible
+
+## Contribution guidelines
 
 Quadlets must always Just Work. This means they need to be tested before being added to this repository. I have personally tested every single Quadlet in this repository.
 
