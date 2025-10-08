@@ -1,0 +1,27 @@
+[Container]
+Image=docker.io/weblate/weblate:latest
+ContainerName=weblate
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=8080:8080
+Volume=weblate-data:/app/data:Z
+Volume=weblate-cache:/app/cache:Z
+
+Environment=WEBLATE_SITE_DOMAIN=localhost
+# Environment=WEBLATE_ADMIN_PASSWORD=
+# Environment=WEBLATE_ADMIN_EMAIL=
+Environment=POSTGRES_USER=weblate
+Environment=POSTGRES_PASSWORD=weblate
+Environment=POSTGRES_DB=weblate
+Environment=POSTGRES_HOST=weblate-postgres
+Environment=REDIS_HOST=weblate-redis
+
+Network=weblatenet.network
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
