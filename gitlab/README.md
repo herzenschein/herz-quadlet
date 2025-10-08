@@ -1,11 +1,10 @@
 ## Summary
 
-Gitea is a web git forge that is a hard fork of [Gogs](https://gogs.io/).
+Gitlab is a web git forge (with the whole kitchen sink).
 
-* Main website: https://gitea.com
+* Main website: https://gitlab.com
 * Container docs:
-  * https://docs.gitea.com/installation/install-with-docker-rootless
-  * https://docs.gitea.com/installation/install-with-docker
+  * https://docs.gitlab.com/install/docker/
 * See also:
   * [Forgejo](../forgejo)
   * [Gitea](../gitea)
