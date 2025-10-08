@@ -48,7 +48,7 @@ For example, `docker-mailserver` is the upstream name, but I use `dockermailserv
 The container name for the main user-facing service
 should be just the upstream name instead of generic names like `web` or `app`.
 Other necessary components get the upstream name + `-suffix`, for example, `mediawiki-db`.
-It always should match the `ContainerName=` entry.
+It should always match the `ContainerName=` entry.
 This is because this repository doesn't default to Pods,
 and because it renders nice container names in terminal output,
 making it more user friendly.
