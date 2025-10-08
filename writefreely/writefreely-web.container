@@ -1,3 +1,8 @@
+[Unit]
+Description=Blog writing platform federated across the Fediverse
+Documentation=https://writefreely.org/
+Documentation=https://docs.kanboard.org/v1/admin/docker/
+
 [Container]
 Image=docker.io/writeas/writefreely
 ContainerName=writefreely-web

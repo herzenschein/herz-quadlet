@@ -1,3 +1,9 @@
+[Unit]
+Description=Web AI Firewall Utility that protects against scraper bots
+Documentation=https://anubis.techaro.lol/
+Documentation=https://anubis.techaro.lol/docs/admin/environments/docker-compose
+Documentation=https://github.com/daegalus/caddy-anubis
+
 [Container]
 Image=ghcr.io/techarohq/anubis:latest
 ContainerName=anubis

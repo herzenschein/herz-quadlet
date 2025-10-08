@@ -1,3 +1,9 @@
+[Unit]
+Description=Automated dynamic DNS client
+Documentation=https://github.com/qdm12/ddns-updater
+Documentation=https://github.com/qdm12/ddns-updater/tree/master#container
+Documentation=https://github.com/qdm12/ddns-updater/tree/master/docs
+
 [Container]
 Image=docker.io/qmcgaw/ddns-updater
 ContainerName=ddns-updater

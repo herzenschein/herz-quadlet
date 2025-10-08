@@ -1,3 +1,8 @@
+[Unit]
+Description=WebRTC virtual browser
+Documentation=https://neko.m1k1o.net/
+Documentation=https://neko.m1k1o.net/docs/v3/installation
+
 [Container]
 Image=ghcr.io/m1k1o/neko/firefox:latest
 ContainerName=neko

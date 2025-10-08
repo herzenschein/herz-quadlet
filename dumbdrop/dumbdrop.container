@@ -1,3 +1,8 @@
+[Unit]
+Description=Minimal file upload server
+Documentation=https://github.com/DumbWareio/DumbDrop
+Documentation=https://github.com/DumbWareio/DumbDrop#quick-start
+
 [Container]
 Image=docker.io/dumbwareio/dumbdrop:latest
 ContainerName=dumbdrop

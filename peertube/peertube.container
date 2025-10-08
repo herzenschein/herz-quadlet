@@ -1,3 +1,8 @@
+[Unit]
+Description=Decentralized video hosting federated across the Fediverse
+Documentation=https://joinpeertube.org/
+Documentation=https://docs.joinpeertube.org/install/docker
+
 [Container]
 Image=docker.io/chocobozzz/peertube:production-bookworm
 ContainerName=peertube

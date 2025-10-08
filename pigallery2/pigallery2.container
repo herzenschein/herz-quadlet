@@ -1,3 +1,8 @@
+[Unit]
+Description=Photo image gallery
+Documentation=https://bpatrik.github.io/pigallery2/
+Documentation=https://github.com/bpatrik/pigallery2/blob/master/docker/README.md
+
 [Container]
 Image=docker.io/bpatrik/pigallery2:latest
 ContainerName=pigallery2

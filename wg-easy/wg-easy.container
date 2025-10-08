@@ -1,3 +1,8 @@
+[Unit]
+Description=Web frontend for Wireguard with user management
+Documentation=https://github.com/wg-easy/wg-easy
+Documentation=https://wg-easy.github.io/wg-easy/latest/examples/tutorials/podman-nft/
+
 [Container]
 Image=docker.io/weejewel/wg-easy
 ContainerName=wg-easy

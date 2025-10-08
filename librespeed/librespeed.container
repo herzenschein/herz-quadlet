@@ -1,3 +1,8 @@
+[Unit]
+Description=JS-only speed test
+Documentation=https://librespeed.org/
+Documentation=https://github.com/librespeed/speedtest/blob/master/doc_docker.md
+
 [Container]
 Image=ghcr.io/librespeed/speedtest:latest
 ContainerName=librespeed

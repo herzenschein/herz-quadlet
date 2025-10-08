@@ -1,3 +1,8 @@
+[Unit]
+Description=Project management web dashboard
+Documentation=https://www.focalboard.com/
+Documentation=https://github.com/mattermost-community/focalboard#building-and-running-standalone-desktop-apps
+
 [Container]
 Image=docker.io/mattermost/focalboard
 ContainerName=focalboard

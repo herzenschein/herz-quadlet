@@ -1,3 +1,8 @@
+[Unit]
+Description=Private metasearch engine
+Documentation=https://docs.searxng.org/
+Documentation=https://docs.searxng.org/admin/installation-docker.html#installation-container
+
 [Container]
 Image=docker.io/searxng/searxng:latest
 ContainerName=searxng

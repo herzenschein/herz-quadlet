@@ -1,3 +1,8 @@
+[Unit]
+Description=Distributed SCM
+Documentation=https://fossil-scm.org/
+Documentation=https://hub.docker.com/r/nijtmans/fossil
+
 [Container]
 Image=docker.io/nijtmans/fossil:latest
 ContainerName=fossil

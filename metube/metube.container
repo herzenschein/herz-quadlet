@@ -1,3 +1,8 @@
+[Unit]
+Description=Web interface for downloading YouTube videos
+Documentation=https://github.com/alexta69/metube
+Documentation=https://github.com/alexta69/metube#run-using-docker
+
 [Container]
 Image=ghcr.io/alexta69/metube
 ContainerName=metube

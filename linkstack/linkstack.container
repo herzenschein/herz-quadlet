@@ -1,3 +1,9 @@
+[Unit]
+Description=Managed link page for profile bios
+Documentation=https://linkstack.org/
+Documentation=https://linkstack.org/docker/
+Documentation=https://github.com/linkstackorg/linkstack-docker
+
 [Container]
 Image=docker.io/linkstackorg/linkstack:latest
 ContainerName=linkstack

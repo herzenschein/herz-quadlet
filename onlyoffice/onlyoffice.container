@@ -1,3 +1,8 @@
+[Unit]
+Description=Collaborative web office suite
+Documentation=https://www.onlyoffice.com/
+Documentation=https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-docker.aspx
+
 [Container]
 Image=docker.io/onlyoffice/documentserver:latest
 ContainerName=onlyoffice

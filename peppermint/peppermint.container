@@ -1,3 +1,8 @@
+[Unit]
+Description=Issue management tracker
+Documentation=https://peppermint.sh/
+Documentation=https://docs.peppermint.sh/docker
+
 [Container]
 Image=docker.io/pepperlabs/peppermint:latest
 ContainerName=peppermint

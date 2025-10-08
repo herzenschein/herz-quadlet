@@ -1,3 +1,8 @@
+[Unit]
+Description=Automated dynamic DNS client
+Documentation=https://troglobit.com/projects/inadyn/
+Documentation=https://github.com/troglobit/inadyn#docker
+
 [Container]
 Image=docker.io/troglobit/inadyn
 ContainerName=inadyn

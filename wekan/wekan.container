@@ -1,3 +1,8 @@
+[Unit]
+Description=Kanban-style project management software
+Documentation=https://wekan.fi/
+Documentation=https://github.com/wekan/wekan/blob/main/docker-compose.yml
+
 [Container]
 Image=quay.io/wekan/wekan
 ContainerName=wekan

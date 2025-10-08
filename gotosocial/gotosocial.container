@@ -1,3 +1,8 @@
+[Unit]
+Description=ActivityPub social network server to access the Fediverse
+Documentation=https://gotosocial.org/
+Documentation=https://docs.gotosocial.org/en/latest/getting_started/installation/container/
+
 [Container]
 Image=docker.io/superseriousbusiness/gotosocial
 ContainerName=gotosocial

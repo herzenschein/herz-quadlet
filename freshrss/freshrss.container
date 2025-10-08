@@ -1,3 +1,8 @@
+[Unit]
+Description=RSS feed aggregator
+Documentation=https://freshrss.org/index.html
+Documentation=https://github.com/FreshRSS/FreshRSS/tree/edge/Docker
+
 [Container]
 Image=docker.io/freshrss/freshrss:latest
 ContainerName=freshrss

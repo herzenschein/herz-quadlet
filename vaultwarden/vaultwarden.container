@@ -1,3 +1,8 @@
+[Unit]
+Description=Password manager
+Documentation=https://github.com/dani-garcia/vaultwarden
+Documentation=https://github.com/dani-garcia/vaultwarden#usage
+
 [Container]
 Image=docker.io/vaultwarden/server
 ContainerName=vaultwarden

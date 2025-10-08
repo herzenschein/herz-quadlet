@@ -1,3 +1,8 @@
+[Unit]
+Description=Static website generator (build version)
+Documentation=https://gohugo.io/
+Documentation=https://github.com/klakegg/docker-hugo#using-image
+
 [Container]
 Image=docker.io/klakegg/hugo:ext-alpine
 ContainerName=hugo-build

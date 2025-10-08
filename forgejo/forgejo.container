@@ -1,3 +1,8 @@
+[Unit]
+Description=Web git forge
+Documentation=https://forgejo.org/
+Documentation=https://forgejo.org/docs/latest/admin/installation/docker/
+
 [Container]
 Image=codeberg.org/forgejo/forgejo:1.21-rootless
 ContainerName=forgejo

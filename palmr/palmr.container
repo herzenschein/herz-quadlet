@@ -1,3 +1,8 @@
+[Unit]
+Description=File upload and sharing server
+Documentation=https://palmr.kyantech.com.br/
+Documentation=https://palmr.kyantech.com.br/docs/3.2-beta/quick-start#deployment-options
+
 [Container]
 Image=docker.io/kyantech/palmr:latest
 ContainerName=palmr

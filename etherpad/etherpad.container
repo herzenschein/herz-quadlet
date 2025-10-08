@@ -1,3 +1,9 @@
+[Unit]
+Description=Collaborative online editor for plain text
+Documentation=https://etherpad.org/
+Documentation=https://docs.etherpad.org/docker.html
+Documentation=https://github.com/ether/etherpad-lite#installation
+
 [Container]
 Image=docker.io/etherpad/etherpad
 ContainerName=etherpad

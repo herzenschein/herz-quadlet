@@ -1,3 +1,8 @@
+[Unit]
+Description=Single-user video streaming service federated across the Fediverse
+Documentation=https://owncast.online/
+Documentation=https://owncast.online/quickstart/container/
+
 [Container]
 Image=docker.io/owncast/owncast
 ContainerName=owncast

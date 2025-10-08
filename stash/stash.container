@@ -1,3 +1,8 @@
+[Unit]
+Description=Porn image gallery
+Documentation=https://github.com/stashapp/stash
+Documentation=https://github.com/stashapp/stash/blob/develop/docker/production/README.md
+
 [Container]
 Image=docker.io/stashapp/stash:latest
 ContainerName=stash

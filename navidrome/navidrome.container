@@ -1,3 +1,8 @@
+[Unit]
+Description=Tag-based music streaming server
+Documentation=https://www.navidrome.org/
+Documentation=https://www.navidrome.org/docs/installation/docker/
+
 [Container]
 Image=docker.io/deluan/navidrome
 ContainerName=navidrome

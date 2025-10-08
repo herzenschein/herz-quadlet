@@ -1,3 +1,8 @@
+[Unit]
+Description=Container manager
+Documentation=https://www.portainer.io/
+Documentation=https://docs.portainer.io/start/install-ce/server/docker/linux
+
 [Container]
 Image=docker.io/portainer/portainer-ce:alpine
 ContainerName=portainer

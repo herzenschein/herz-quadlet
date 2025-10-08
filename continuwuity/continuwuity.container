@@ -1,3 +1,8 @@
+[Unit]
+Description=Matrix server
+Documentation=https://continuwuity.org
+Documentation=https://continuwuity.org/deploying/docker
+
 [Container]
 Image=forgejo.ellis.link/continuwuation/continuwuity:latest
 ContainerName=continuwuity

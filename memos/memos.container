@@ -1,3 +1,8 @@
+[Unit]
+Description=Microblogging-like Markdown note-taking app
+Documentation=https://www.usememos.com/
+Documentation=https://www.usememos.com/docs/installation/docker
+
 [Container]
 Image=docker.io/neosmemo/memos:latest
 ContainerName=memos

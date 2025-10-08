@@ -1,3 +1,8 @@
+[Unit]
+Description=Collaborative web text editor
+Documentation=https://rustpad.io
+Documentation=https://github.com/ekzhang/rustpad#deployment
+
 [Container]
 Image=docker.io/ekzhang/rustpad
 ContainerName=rustpad

@@ -1,3 +1,9 @@
+[Unit]
+Description=Web git forge
+Documentation=https://gitea.com
+Documentation=https://docs.gitea.com/installation/install-with-docker-rootless
+Documentation=https://docs.gitea.com/installation/install-with-docker
+
 [Container]
 Image=docker.io/gitea/gitea:latest-rootless
 ContainerName=gitea

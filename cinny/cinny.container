@@ -1,3 +1,8 @@
+[Unit]
+Description=Web Matrix chat client
+Documentation=https://cinny.in/
+Documentation=https://github.com/cinnyapp/cinny#self-hosting
+
 [Container]
 Image=ghcr.io/cinnyapp/cinny
 ContainerName=cinny

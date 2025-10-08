@@ -1,3 +1,8 @@
+[Unit]
+Description=Gemini protocol server
+Documentation=https://github.com/a-h/gemini
+Documentation=https://github.com/a-h/gemini#gemini-server-docker-image
+
 [Container]
 Image=docker.io/adrianhesketh/gemini:latest
 ContainerName=gemini

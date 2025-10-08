@@ -1,3 +1,8 @@
+[Unit]
+Description=Stores webpages for later reading
+Documentation=https://wallabag.org/
+Documentation=https://doc.wallabag.org/admin/installation/installation/#installation-with-docker-or-docker-compose
+
 [Container]
 Image=docker.io/wallabag/wallabag
 ContainerName=wallabag

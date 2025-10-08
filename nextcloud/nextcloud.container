@@ -1,3 +1,8 @@
+[Unit]
+Description=Cloud suite (lean community version)
+Documentation=https://nextcloud.com/
+Documentation=https://hub.docker.com/_/nextcloud/
+
 [Container]
 Image=docker.io/nextcloud:latest
 ContainerName=nextcloud

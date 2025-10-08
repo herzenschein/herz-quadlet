@@ -1,3 +1,8 @@
+[Unit]
+Description=Forum server designed for Q&A
+Documentation=https://answer.apache.org/
+Documentation=https://answer.apache.org/docs/installation?method=docker
+
 [Container]
 Image=docker.io/apache/answer:latest
 ContainerName=answer

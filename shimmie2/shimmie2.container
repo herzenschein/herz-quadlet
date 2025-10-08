@@ -1,3 +1,8 @@
+[Unit]
+Description=Booru-style image gallery for art
+Documentation=https://github.com/shish/shimmie2
+Documentation=https://github.com/shish/shimmie2/wiki/Docker
+
 [Container]
 Image=docker.io/shish2k/shimmie2:latest
 ContainerName=shimmie2

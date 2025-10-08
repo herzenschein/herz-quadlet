@@ -1,3 +1,8 @@
+[Unit]
+Description=Online Computer Assisted Translation tool
+Documentation=https://weblate.org/
+Documentation=https://docs.weblate.org/en/latest/admin/install/docker.html
+
 [Container]
 Image=docker.io/weblate/weblate:latest
 ContainerName=weblate

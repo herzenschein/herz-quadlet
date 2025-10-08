@@ -1,3 +1,8 @@
+[Unit]
+Description=Web frontend for Twitter/X
+Documentation=https://github.com/zedeus/nitter
+Documentation=https://github.com/zedeus/nitter#docker
+
 [Container]
 Image=docker.io/zedeus/nitter
 ContainerName=nitter

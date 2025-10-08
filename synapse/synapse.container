@@ -1,3 +1,9 @@
+[Unit]
+Description=Matrix server
+Documentation=https://github.com/element-hq/synapse
+Documentation=https://element-hq.github.io/synapse/latest/setup/installation.html#docker-images-and-ansible-playbooks
+Documentation=https://github.com/element-hq/synapse/tree/develop/contrib/docker
+
 [Container]
 Image=docker.io/matrixdotorg/synapse
 ContainerName=synapse

@@ -1,3 +1,8 @@
+[Unit]
+Description=Forum software with knowledge base features
+Documentation=https://www.storyden.org/
+Documentation=https://www.storyden.org/docs/introduction/vps/docker
+
 [Container]
 Image=ghcr.io/southclaws/storyden:latest
 ContainerName=storyden
