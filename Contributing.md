@@ -58,4 +58,4 @@ If a container requires a database, use either the simplest solution (often SQLi
 Only reverse proxies should make direct use of the 80 and 443 outbound ports.
 For example, Cinny publishes the inbound port 80, but it is mapped to the outbound port 8080.
 This makes it less annoying to test the containers locally,
-as using these ports requires `net.ipv4.ip_unprivileged_port_start=80`.
+as using 80 and 443 requires `net.ipv4.ip_unprivileged_port_start=80`.
