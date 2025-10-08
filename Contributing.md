@@ -16,7 +16,7 @@ All quadlets available here are expected to follow this behavior:
 * All other container files are supposed to start on boot (default.target)
 * If a service has dependencies, those dependencies should automatically start before the main service (WantedBy)
 * If a service has dependencies, when the service crashes or stops, all its dependencies should stop (BindsTo)
-* All quadlets are supposed to force log to systemd even if you have set it up to not do that (LogDriver)
+* All quadlets are supposed to log to systemd unless you have set it up to not do that (LogDriver)
 
 ## Contribution guidelines
 
