@@ -4,7 +4,7 @@ Documentation=https://owncast.online/
 Documentation=https://owncast.online/quickstart/container/
 
 [Container]
-Image=docker.io/owncast/owncast
+Image=docker.io/owncast/owncast:latest
 ContainerName=owncast
 AutoUpdate=registry
 #Notify=true

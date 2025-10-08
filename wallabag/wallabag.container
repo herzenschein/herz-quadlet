@@ -4,7 +4,7 @@ Documentation=https://wallabag.org/
 Documentation=https://doc.wallabag.org/admin/installation/installation/#installation-with-docker-or-docker-compose
 
 [Container]
-Image=docker.io/wallabag/wallabag
+Image=docker.io/wallabag/wallabag:latest
 ContainerName=wallabag
 AutoUpdate=registry
 #Notify=true

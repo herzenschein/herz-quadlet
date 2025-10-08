@@ -4,7 +4,7 @@ Documentation=https://kanboard.org/
 Documentation=https://docs.kanboard.org/v1/admin/docker/
 
 [Container]
-Image=docker.io/kanboard/kanboard
+Image=docker.io/kanboard/kanboard:latest
 ContainerName=kanboard
 AutoUpdate=registry
 #Notify=true

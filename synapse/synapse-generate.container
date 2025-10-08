@@ -1,5 +1,5 @@
 [Container]
-Image=docker.io/matrixdotorg/synapse
+Image=docker.io/matrixdotorg/synapse:latest
 ContainerName=synapse-generate
 AutoUpdate=registry
 #Notify=true

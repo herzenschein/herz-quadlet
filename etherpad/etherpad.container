@@ -5,7 +5,7 @@ Documentation=https://docs.etherpad.org/docker.html
 Documentation=https://github.com/ether/etherpad-lite#installation
 
 [Container]
-Image=docker.io/etherpad/etherpad
+Image=docker.io/etherpad/etherpad:latest
 ContainerName=etherpad
 AutoUpdate=registry
 #Notify=true

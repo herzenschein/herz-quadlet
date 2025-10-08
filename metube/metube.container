@@ -4,7 +4,7 @@ Documentation=https://github.com/alexta69/metube
 Documentation=https://github.com/alexta69/metube#run-using-docker
 
 [Container]
-Image=ghcr.io/alexta69/metube
+Image=ghcr.io/alexta69/metube:latest
 ContainerName=metube
 AutoUpdate=registry
 #Notify=true

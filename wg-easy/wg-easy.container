@@ -4,7 +4,7 @@ Documentation=https://github.com/wg-easy/wg-easy
 Documentation=https://wg-easy.github.io/wg-easy/latest/examples/tutorials/podman-nft/
 
 [Container]
-Image=docker.io/weejewel/wg-easy
+Image=docker.io/weejewel/wg-easy:latest
 ContainerName=wg-easy
 AutoUpdate=registry
 #Notify=true

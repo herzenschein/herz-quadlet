@@ -5,7 +5,7 @@ Documentation=https://element-hq.github.io/synapse/latest/setup/installation.htm
 Documentation=https://github.com/element-hq/synapse/tree/develop/contrib/docker
 
 [Container]
-Image=docker.io/matrixdotorg/synapse
+Image=docker.io/matrixdotorg/synapse:latest
 ContainerName=synapse
 AutoUpdate=registry
 #Notify=true

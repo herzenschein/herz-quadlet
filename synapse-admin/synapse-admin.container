@@ -4,7 +4,7 @@ Documentation=https://github.com/etkecc/synapse-admin
 Documentation=https://github.com/etkecc/synapse-admin#steps-for-3
 
 [Container]
-Image=ghcr.io/etkecc/synapse-admin
+Image=ghcr.io/etkecc/synapse-admin:latest
 ContainerName=synapse-admin
 AutoUpdate=registry
 #Notify=true

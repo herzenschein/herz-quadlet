@@ -4,7 +4,7 @@ Documentation=https://jellyfin.org/
 Documentation=https://jellyfin.org/docs/general/installation/container
 
 [Container]
-Image=docker.io/jellyfin/jellyfin
+Image=docker.io/jellyfin/jellyfin:latest
 ContainerName=jellyfin
 AutoUpdate=registry
 #Notify=true

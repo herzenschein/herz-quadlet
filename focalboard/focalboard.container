@@ -4,7 +4,7 @@ Documentation=https://www.focalboard.com/
 Documentation=https://github.com/mattermost-community/focalboard#building-and-running-standalone-desktop-apps
 
 [Container]
-Image=docker.io/mattermost/focalboard
+Image=docker.io/mattermost/focalboard:latest
 ContainerName=focalboard
 AutoUpdate=registry
 #Notify=true

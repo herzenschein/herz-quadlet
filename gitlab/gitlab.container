@@ -4,7 +4,7 @@ Documentation=https://gitlab.com
 Documentation=https://docs.gitlab.com/install/docker/
 
 [Container]
-Image=docker.io/gitlab/gitlab-ce
+Image=docker.io/gitlab/gitlab-ce:latest
 ContainerName=gitlab
 AutoUpdate=registry
 #Notify=true

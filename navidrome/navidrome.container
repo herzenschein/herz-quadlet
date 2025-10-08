@@ -4,7 +4,7 @@ Documentation=https://www.navidrome.org/
 Documentation=https://www.navidrome.org/docs/installation/docker/
 
 [Container]
-Image=docker.io/deluan/navidrome
+Image=docker.io/deluan/navidrome:latest
 ContainerName=navidrome
 AutoUpdate=registry
 #Notify=true

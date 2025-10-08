@@ -4,7 +4,7 @@ Documentation=https://conduit.rs/
 Documentation=https://docs.conduit.rs/deploying/docker.html
 
 [Container]
-Image=docker.io/matrixconduit/matrix-conduit
+Image=docker.io/matrixconduit/matrix-conduit:latest
 ContainerName=conduit
 AutoUpdate=registry
 #Notify=true

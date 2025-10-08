@@ -4,7 +4,7 @@ Documentation=https://rustpad.io
 Documentation=https://github.com/ekzhang/rustpad#deployment
 
 [Container]
-Image=docker.io/ekzhang/rustpad
+Image=docker.io/ekzhang/rustpad:latest
 ContainerName=rustpad
 AutoUpdate=registry
 #Notify=true

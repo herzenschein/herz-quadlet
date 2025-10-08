@@ -1,5 +1,5 @@
 [Container]
-Image=docker.io/writeas/writefreely
+Image=docker.io/writeas/writefreely:latest
 ContainerName=writefreely-dbinit
 AutoUpdate=registry
 #Notify=true

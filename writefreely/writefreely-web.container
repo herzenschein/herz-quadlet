@@ -4,7 +4,7 @@ Documentation=https://writefreely.org/
 Documentation=https://docs.kanboard.org/v1/admin/docker/
 
 [Container]
-Image=docker.io/writeas/writefreely
+Image=docker.io/writeas/writefreely:latest
 ContainerName=writefreely-web
 AutoUpdate=registry
 #Notify=true

@@ -4,7 +4,7 @@ Documentation=https://www.mediawiki.org/wiki/MediaWiki
 Documentation=https://hub.docker.com/_/mediawiki
 
 [Container]
-Image=docker.io/mediawiki
+Image=docker.io/mediawiki:latest
 ContainerName=mediawiki
 AutoUpdate=registry
 #Notify=true

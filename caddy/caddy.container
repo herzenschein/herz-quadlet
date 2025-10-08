@@ -4,7 +4,7 @@ Documentation=https://caddyserver.com/
 Documentation=https://hub.docker.com/_/caddy
 
 [Container]
-Image=docker.io/caddy
+Image=docker.io/caddy:latest
 ContainerName=caddy
 AutoUpdate=registry
 #Notify=true

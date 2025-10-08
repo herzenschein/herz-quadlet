@@ -5,7 +5,7 @@ Documentation=https://github.com/qdm12/ddns-updater/tree/master#container
 Documentation=https://github.com/qdm12/ddns-updater/tree/master/docs
 
 [Container]
-Image=docker.io/qmcgaw/ddns-updater
+Image=docker.io/qmcgaw/ddns-updater:latest
 ContainerName=ddns-updater
 AutoUpdate=registry
 #Notify=true

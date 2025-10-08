@@ -4,7 +4,7 @@ Documentation=https://cinny.in/
 Documentation=https://github.com/cinnyapp/cinny#self-hosting
 
 [Container]
-Image=ghcr.io/cinnyapp/cinny
+Image=ghcr.io/cinnyapp/cinny:latest
 ContainerName=cinny
 AutoUpdate=registry
 #Notify=true

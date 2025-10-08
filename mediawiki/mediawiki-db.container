@@ -1,5 +1,5 @@
 [Container]
-Image=docker.io/mariadb
+Image=docker.io/mariadb:latest
 ContainerName=mediawiki-db
 AutoUpdate=registry
 #Notify=true

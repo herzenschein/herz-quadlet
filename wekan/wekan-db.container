@@ -1,5 +1,5 @@
 [Container]
-Image=docker.io/mongo
+Image=docker.io/mongo:latest
 ContainerName=wekan-db
 AutoUpdate=registry
 #Notify=true

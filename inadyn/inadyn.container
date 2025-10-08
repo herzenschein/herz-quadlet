@@ -4,7 +4,7 @@ Documentation=https://troglobit.com/projects/inadyn/
 Documentation=https://github.com/troglobit/inadyn#docker
 
 [Container]
-Image=docker.io/troglobit/inadyn
+Image=docker.io/troglobit/inadyn:latest
 ContainerName=inadyn
 AutoUpdate=registry
 #Notify=true
