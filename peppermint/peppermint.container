@@ -18,7 +18,7 @@ Environment=SECRET=peppermint4life
 PublishPort=3000:3000
 PublishPort=5003:5003
 
-Network=peppermintnet.network
+Network=peppermint.network
 
 [Service]
 Restart=on-success

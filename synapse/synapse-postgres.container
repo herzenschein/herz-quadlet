@@ -15,7 +15,7 @@ HostName=postgres
 
 Volume=synapse-postgres-data:/var/lib/postgresql/data:Z
 
-Network=synapsenet.network
+Network=synapse.network
 
 [Service]
 Restart=on-success

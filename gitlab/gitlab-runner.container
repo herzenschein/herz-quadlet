@@ -8,7 +8,7 @@ LogDriver=journald
 Volume=/run/user/1000/podman/podman.sock:/var/run/docker.sock:z
 Volume=gitlab-runner-config:/etc/gitlab-runner:Z
 
-Network=gitlabnet.network
+Network=gitlab.network
 
 [Service]
 Restart=on-success

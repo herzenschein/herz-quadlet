@@ -7,7 +7,8 @@ LogDriver=journald
 
 PublishPort=3306:3306
 Volume=writefreely-db:/var/lib/mysql/writefreely:z
-Network=writefreelynet.network
+
+Network=writefreely.network
 
 Environment=MYSQL_RANDOM_ROOT_PASSWORD=true
 Environment=MYSQL_DATABASE=writefreelydb

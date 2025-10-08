@@ -6,7 +6,8 @@ AutoUpdate=registry
 LogDriver=journald
 
 Volume=/path/to/config.ini:/go/config.ini:Z
-Network=writefreelynet.network
+
+Network=writefreely.network
 
 User=daemon
 Group=daemon

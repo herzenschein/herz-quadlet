@@ -20,7 +20,7 @@ Volume=./Caddyfile:/etc/caddy/Caddyfile:ro,Z
 Volume=caddy-data:/data:Z
 Volume=caddy-config:/config:Z
 
-Network=caddynet.network
+Network=caddy.network
 
 [Service]
 Restart=on-success

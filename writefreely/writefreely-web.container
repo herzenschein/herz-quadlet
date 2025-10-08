@@ -13,7 +13,8 @@ LogDriver=journald
 PublishPort=8080:8080
 Volume=writefreely-keys:/go/keys:Z
 Volume=/path/to/config.ini:/go/config.ini:Z
-Network=writefreelynet.network
+
+Network=writefreely.network
 
 User=daemon
 Group=daemon

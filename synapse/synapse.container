@@ -16,7 +16,7 @@ Volume=./data:/data:z
 
 UserNS=keep-id
 
-Network=synapsenet.network
+Network=synapse.network
 
 [Service]
 Restart=on-success

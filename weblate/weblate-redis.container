@@ -7,7 +7,7 @@ LogDriver=journald
 
 Volume=redis-data:/data:Z
 
-Network=weblatenet.network
+Network=weblate.network
 
 [Service]
 Restart=on-success

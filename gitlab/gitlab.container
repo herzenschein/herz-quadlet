@@ -21,7 +21,7 @@ Volume=gitlab-data:/var/opt/gitlab:Z
 
 Environment=GITLAB_OMNIBUS_CONFIG="external_url 'http://127.0.0.1:8888'"
 
-Network=gitlabnet.network
+Network=gitlab.network
 
 User=root
 Group=root

@@ -13,7 +13,7 @@ PublishPort=5432:5432
 
 Volume=postgres-data:/var/lib/postgresql/data:Z
 
-Network=weblatenet.network
+Network=weblate.network
 
 [Service]
 Restart=on-success

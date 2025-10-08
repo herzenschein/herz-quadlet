@@ -13,7 +13,7 @@ Environment=MYSQL_RANDOM_ROOT_PASSWORD=yes
 Environment=MYSQL_USER=mediawiki-user
 Environment=MYSQL_PASSWORD=mediawiki-pass
 
-Network=mediawikinet.network
+Network=mediawiki.network
 
 [Service]
 Restart=on-success

@@ -14,7 +14,7 @@ PublishPort=8080:80
 Volume=mediawiki-images:/var/www/html/images:Z
 #Volume=/path/to/LocalSettings.php:/var/www/html/LocalSettings.php:Z
 
-Network=mediawikinet.network
+Network=mediawiki.network
 
 [Service]
 Restart=on-success

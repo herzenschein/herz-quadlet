@@ -5,7 +5,7 @@ AutoUpdate=registry
 #Notify=true
 LogDriver=journald
 
-Network=wekannet.network
+Network=wekan.network
 
 [Service]
 Restart=on-success

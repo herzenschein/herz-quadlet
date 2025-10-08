@@ -9,7 +9,7 @@ PublishPort=6379:6379
 
 Volume=peertube-redis:/data:z
 
-Network=peertubenet.network
+Network=peertube.network
 
 [Service]
 Restart=on-success

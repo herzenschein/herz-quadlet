@@ -9,7 +9,7 @@ Volume=peertube-db:/var/lib/postgresql/data:z
 
 EnvironmentFile=env
 
-Network=peertubenet.network
+Network=peertube.network
 
 [Service]
 Restart=on-success

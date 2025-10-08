@@ -7,7 +7,8 @@ LogDriver=journald
 
 Volume=writefreely-keys:/go/keys:z
 Volume=/path/to/config.ini:/go/config.ini:z
-Network=writefreelynet.network
+
+Network=writefreely.network
 
 User=daemon
 Group=daemon
