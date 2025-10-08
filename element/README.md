@@ -2,9 +2,9 @@
 
 Element is a [Matrix](https://matrix.org/) chat client.
 
-* Main website: https://cinny.in/
+* Main website: https://element.io/
 * Container docs:
-  * https://github.com/cinnyapp/cinny#self-hosting
+  * https://github.com/element-hq/element-web/blob/develop/docs/install.md#docker
 * See also:
   * [Cinny](../cinny)
   * [Conduit](../conduit)
