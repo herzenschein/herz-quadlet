@@ -1,0 +1,18 @@
+[Unit]
+Description=Cache server
+Documentation=https://hub.docker.com/_/redis/
+
+[Container]
+Image=docker.io/redis:latest
+ContainerName=redis
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+#Network=some.network
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
