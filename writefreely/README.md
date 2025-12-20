@@ -4,7 +4,7 @@ WriteFreely is an [ActivityPub](https://activitypub.rocks/) blog writing platfor
 
 * Main website: https://writefreely.org/
 * Container docs:
-  * https://docs.kanboard.org/v1/admin/docker/
+  * https://writefreely.org/docs/latest/admin/docker
 * See also:
   * [GoToSocial](../gotosocial)
   * [PeerTube](../peertube)
