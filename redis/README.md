@@ -13,6 +13,24 @@ You will probably want one Redis instance per service.
   * https://hub.docker.com/_/redis/
 * See also:
 * Services that support Redis:
+  * [answer](../answer)
+  * [caddy](../caddy)
+  * [docker-mailserver](../dockermailserver)
+  * [etherpad](../etherpad)
+  * [forgejo](../forgejo)
+  * [gitea](../gitea)
+  * [gitlab](../gitlab)
+  * [linkstack](../linkstack)
+  * [mediawiki](../mediawiki)
+  * [nextcloud](../nextcloud)
+  * [nitter](../nitter)
+  * [onlyoffice](../onlyoffice)
+  * [peertube](../peertube)
+  * [shimmie2](../shimmie2)
+  * [storyden](../storyden)
+  * [synapse](../synapse)
+  * [wallabag](../wallabag)
+  * [weblate](../weblate)
 
 ## Running instructions
 
