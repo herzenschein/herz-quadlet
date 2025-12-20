@@ -1,5 +1,8 @@
 ## Summary
 
+> [!WARNING]
+> This project has been archived upstream.
+
 Inadyn is an automated dynamic DNS client that lets you update DNS records automatically when your dynamic IP changes.
 
 It does not allow to update only IPv6. For that use [ddns-updater](../ddns-updater).
