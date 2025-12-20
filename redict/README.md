@@ -1,22 +1,22 @@
 ## Summary
 
-Redis is primarily a cache server and key/value store database
+Redict is a drop-in replacement for Redis, primarily a cache server and key/value store database
 (not to be mistaken with databases like PostgreSQL and MariaDB).
 
-Redis has changed their licenses multiple times, which might be undesirable.
-You may use the drop-in replacement [redict](../redict) instead, which is LGPL.
+Redict is LGPL, while Redis has changed their licenses multiple times.
+Where Redis is used, this can be used instead.
 
 It is used by other containers that connect to it directly via internal container networking,
 so under normal circumstances you don't need to publish a port.
 
-You will probably want one Redis instance per service.
+You will probably want one Redict instance per service.
 
-* Main website: https://redis.io/
+* Main website: https://redict.io/
 * Container docs:
-  * https://hub.docker.com/_/redis/
+  * https://redict.io/docs/install/containers/
 * See also:
-  * [redict](../redict)
-* Services that support Redis:
+  * [redis](../redis)
+* Services that support Redis (and consequently also Redict):
   * [answer](../answer)
   * [caddy](../caddy)
   * [docker-mailserver](../dockermailserver)
@@ -41,8 +41,8 @@ You will probably want one Redis instance per service.
 Copy this folder to `~/.config/containers/systemd/`,
 inside the same folder as one of your other services.
 
-Change the container name to match something like `<service>-redis`,
-for instance `nextcloud-redis`. This is useful to differentiate between multiple Redis instances.
+Change the container name to match something like `<service>-redict`,
+for instance `nextcloud-redict`. This is useful to differentiate between multiple Redict instances.
 You might also want to change the filename to the same naming scheme.
 
 **Make sure it is in the same network as the service you are trying to run.**

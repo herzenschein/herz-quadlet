@@ -1,0 +1,18 @@
+[Unit]
+Description=Cache server
+Documentation=https://redict.io/docs/install/containers/
+
+[Container]
+Image=registry.redict.io/redict:latest
+ContainerName=redict
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+#Network=some.network
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
