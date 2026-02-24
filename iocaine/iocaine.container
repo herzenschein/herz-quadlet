@@ -1,0 +1,26 @@
+[Unit]
+Description=An aggressive defense mechanism that tries its best to take the assault of LLM scrapers, serve them garbage, and keep them off of upstream resources
+Documentation=https://iocaine.madhouse-project.org/
+Documentation=https://iocaine.madhouse-project.org/documentation/3/getting-started/containers/
+Documentation=https://iocaine.madhouse-project.org/documentation/3/getting-started/
+
+[Container]
+Image=git.madhouse-project.org/iocaine/iocaine:3
+ContainerName=iocaine
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=42069:42069
+
+Volume=./data:/data:Z
+Volume=iocaine-state:/run/iocaine
+Environment=RUST_LOG=iocaine=info
+
+Exec=--config-path /data/etc/config.d
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
