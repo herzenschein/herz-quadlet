@@ -1,0 +1,20 @@
+[Unit]
+Description=Static site server for git forges
+Documentation=https://git-pages.org/
+Documentation=https://codeberg.org/git-pages/git-pages#deployment
+
+[Container]
+ContainerName=git-pages
+Image=codeberg.org/git-pages/git-pages:latest
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=3000:3000
+Volume=git-pages-data:/app/data:Z
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target
