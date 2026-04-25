@@ -1,0 +1,23 @@
+[Unit]
+Description=File server with resumable uploads/downloads that works on everything.
+Documentation=https://github.com/9001/copyparty
+Documentation=https://github.com/9001/copyparty/tree/hovudstraum/scripts/docker
+
+[Container]
+Image=ghcr.io/9001/copyparty-ac:latest
+ContainerName=copyparty
+AutoUpdate=registry
+#Notify=true
+LogDriver=journald
+
+PublishPort=3923:3923
+
+Volume=./copyparty-config:/cfg:ro,Z
+Volume=./copyparty-data:/w:z
+# Volume=./copyparty-data/music:/w/music:z
+
+[Service]
+Restart=on-success
+
+[Install]
+WantedBy=default.target

@@ -10,6 +10,7 @@ This is the much leaner community-maintained Nextcloud that does not come with p
 * Container docs:
   * https://hub.docker.com/_/nextcloud/
 * See also:
+  * [copyparty](../copyparty)
   * [OnlyOffice](../onlyoffice)
 
 ## Running instructions
