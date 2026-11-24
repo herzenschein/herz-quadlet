@@ -1,5 +1,8 @@
 ## Summary
 
+> [!WARNING]
+> This project has been archived upstream.
+
 Redict is a drop-in replacement for Redis, primarily a cache server and key/value store database
 (not to be mistaken with databases like PostgreSQL and MariaDB).
 
